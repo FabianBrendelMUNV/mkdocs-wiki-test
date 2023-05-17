@@ -3,7 +3,7 @@ theme: material
 
 extra:
   social:
-    - type: 'github'
+    - icon: fontawesome/brands/github-alt
       link: 'https://github.com/PartTimeDataScientist'
   feature:
     tabs: true
@@ -17,32 +17,34 @@ extra_css:
 repo_name: 'PartTimeDataScientist/mkdocs-cms'
 repo_url: 'https://github.com/PartTimeDataScientist/mkdocs-cms'
 
-# Theme directory
-theme_dir: material
-
 # Extensions
 markdown_extensions:
-  - markdown.extensions.admonition
-  - markdown.extensions.codehilite(guess_lang=false)
-  - markdown.extensions.def_list
-  - markdown.extensions.footnotes
-  - markdown.extensions.meta
-  - markdown.extensions.toc(permalink=true)
+  - toc:
+      permalink: "#"
+  - smarty
+  - admonition
+  - footnotes
+  - codehilite
   - pymdownx.arithmatex
-  - pymdownx.betterem(smart_enable=all)
+  - pymdownx.betterem:
+      smart_enable: all
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.magiclink
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences
-  - pymdownx.tasklist(custom_checkbox=true)
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.tilde
+  - fontawesome_markdown
 
 # Page tree
-pages:
+nav:
   - 'MkDocs-CMS': 'index.md'
   - 'MkDocs Dokumentation': 'mkdocs.md'
   - 'Getting started': 'getting-started.md'

@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: capriosa/mkdocs-cms
+  repo: PartTimeDataScientist/mkdocs-cms
   branch: master
 
 public_folder: "site"
