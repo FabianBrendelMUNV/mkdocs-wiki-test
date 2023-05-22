@@ -19,6 +19,8 @@ Bitte, lies vorher [hier den Abschnitt über Authenticate with Github](https://w
 
 [![Material für MkDocs](images/material.png)](images/material.png)
 
+[![enter image description here](images/material.png)
+
 ## Start
 
 Installation der neuesten Version von Material mit `pip`:
@@ -32,3 +34,6 @@ Füge diese Zeile der Datei `mkdocs.yml` im Root von Material hinzu:
 Weitere detaillierte Instruktionen sind hier [getting started guide](getting-started.md) zu finden.
 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTY2MjIyNzc5MV19
+-->
