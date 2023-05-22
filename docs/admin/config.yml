@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: PartTimeDataScientist/mkdocs-cms
+  repo: PartTimeDataScientist/mkdocs-wiki-test
   branch: master
 
 public_folder: "site"
