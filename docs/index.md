@@ -19,7 +19,7 @@ Bitte, lies vorher [hier den Abschnitt über Authenticate with Github](https://w
 
 [![Material für MkDocs](images/material.png)](images/material.png)
 
-[![enter image description here](images/material.png)
+[![enter image description here](images/material.png)](images/material.png)
 
 ## Start
 
@@ -35,5 +35,13 @@ Weitere detaillierte Instruktionen sind hier [getting started guide](getting-sta
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MjIyNzc5MV19
+eyJkaXNjdXNzaW9ucyI6eyJmQkY5N0JCYzd4RGt3NngzIjp7In
+N0YXJ0Ijo5NDUsImVuZCI6MTAyMCwidGV4dCI6IlshW2VudGVy
+IGltYWdlIGRlc2NyaXB0aW9uIGhlcmVdKGltYWdlcy9tYXRlcm
+lhbC5wbmcpXShpbWFnZXMvbWF0ZXJpYWwucG5nKSJ9fSwiY29t
+bWVudHMiOnsiR3VzSGtuanFRbW5FOUVzVSI6eyJkaXNjdXNzaW
+9uSWQiOiJmQkY5N0JCYzd4RGt3NngzIiwic3ViIjoiZ2g6MzA5
+MDg3OTUiLCJ0ZXh0IjoiV2hhdCBpcyB0aGlzIGNvbW1lbnQgZG
+9pbmcgaGVyZT8iLCJjcmVhdGVkIjoxNjg0NzY5OTgwMTQxfX0s
+Imhpc3RvcnkiOlsyODExNDUyMzJdfQ==
 -->
