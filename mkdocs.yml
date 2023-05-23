@@ -1,12 +1,12 @@
 site_name: CMS-Demo Site
 theme:
   name: material
-  custom_dir: docs/overrides
+  custom_dir: material\overrides
 
 extra:
   social:
     - icon: fontawesome/brands/github-alt
-      link: 'https://github.com/PartTimeDataScientist'
+      link: 'https://github.com/PartTimeDataScientist/mkdocs-wiki-test'
   feature:
     tabs: true
   palette:
@@ -17,7 +17,7 @@ extra_css:
   - 'stylesheets/extra.css'
 
 repo_name: 'PartTimeDataScientist/mkdocs-cms'
-repo_url: 'https://github.com/PartTimeDataScientist/mkdocs-cms'
+repo_url: 'https://github.com/PartTimeDataScientist/mkdocs-wiki-test'
 
 # Extensions
 markdown_extensions:
@@ -60,6 +60,5 @@ nav:
   - 'Release notes': 'release-notes.md'
   - 'Contributing': 'contributing.md'
   - 'License': 'license.md'
-  - 'M. Droste': 'mdroste.md'
   - 'Kontakt': 'kontakt.md'
   - 'Impressum': 'impressum.md'

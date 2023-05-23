@@ -7,9 +7,6 @@ comments: true
 
 ## Material ist ein Theme für das MaaS Wiki
 
-### fjsdfsdfsd
-
-
  [MkDocs](http://www.mkdocs.org), ein ausgezeichneter Static Site Generator für Online-Dokumentationen. Das Design basiert auf Google's [Material Design](https://www.google.com/design/spec/material-design)
 Richtlinien.
 
@@ -24,8 +21,6 @@ Richtlinien.
 Bitte, lies vorher [hier den Abschnitt über Authenticate with Github](https://www.netlifycms.org/docs/test-drive/).
 
 [![Material für MkDocs](images/material.png)](images/material.png)
-
-[![enter image description here](images/material.png)](images/material.png)
 
 ## Start
 
