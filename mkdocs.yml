@@ -1,5 +1,7 @@
 site_name: CMS-Demo Site
-theme: material
+theme:
+  name: material
+  custom_dir: overrides
 
 extra:
   social:
