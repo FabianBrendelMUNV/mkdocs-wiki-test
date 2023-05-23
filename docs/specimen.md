@@ -4,6 +4,8 @@ date: 08.05.2017
 ---
 ## Body Text
 
+FooBar line added by Stackedit...
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras arcu libero,
 mollis sed massa vel, *ornare viverra ex*. Mauris a ullamcorper lacus. Nullam
 urna elit, malesuada eget finibus ut, ullamcorper ac tortor. Vestibulum sodales
@@ -229,3 +231,6 @@ sit amet laoreet nibh.
 </tr>
 </tbody>
 </table>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEyMDI0MDM4NjhdfQ==
+-->
