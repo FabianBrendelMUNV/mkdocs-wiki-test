@@ -1,6 +1,7 @@
 ---
 title: Installation des Material Theme
 date: 07.05.2017
+comments: true
 ---
 ## Installation
 
