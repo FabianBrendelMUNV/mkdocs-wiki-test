@@ -1,6 +1,7 @@
 ---
 title: 'Ein CMS, mit Material Design, für Dokumentationen'
 date: 08.05.2017
+comments: true
 ---
 ## Wünderschöne Dokumentationen
 
