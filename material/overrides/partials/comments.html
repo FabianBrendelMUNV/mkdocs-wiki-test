@@ -7,7 +7,7 @@
         data-category-id="DIC_kwDOJmHvP84CWrsF"
         data-mapping="pathname"
         data-strict="0"
-        data-reactions-enabled="1"
+        data-reactions-enabled="0"
         data-emit-metadata="0"
         data-input-position="top"
         data-theme="preferred_color_scheme"
@@ -17,7 +17,35 @@
         async>
 </script>
 
-  <!-- Synchronize Giscus theme with palette -->
+<script>
+  /* Activate feedback */
+        /* Set up feedback, i.e. "Was this page helpful?" */
+        if (document.forms.feedback) {
+          var feedback = document.forms.feedback
+          for (var button of feedback.querySelectorAll("[type=submit]")) {
+            button.addEventListener("click", function(ev) {
+              ev.preventDefault()
+
+              /* Retrieve and send data */
+              var page = document.location.pathname
+              var data = this.getAttribute("data-md-value")
+
+              /* Disable form and show note, if given */
+              feedback.firstElementChild.disabled = true
+              var note = feedback.querySelector(
+                ".md-feedback__note [data-md-value='" + data + "']"
+              )
+              if (note)
+                note.hidden = false
+            console.log(page, data)     
+            })
+            /* Show feedback */
+            feedback.hidden = false
+          }
+}
+</script>
+
+<!-- Synchronize Giscus theme with palette -->
   <script>
     var giscus = document.querySelector("script[src*=giscus]")
 
@@ -45,5 +73,6 @@
         }
       })
     })
+
   </script>
 {% endif %}
