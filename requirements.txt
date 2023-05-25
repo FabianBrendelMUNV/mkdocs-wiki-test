@@ -1,5 +1,6 @@
 mkdocs
 mkdocs-material
+mkdocs-nav-weight
 pymdown-extensions
 fontawesome-markdown
 mkauthdocs

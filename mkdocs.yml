@@ -21,6 +21,10 @@ extra_css:
 repo_name: 'PartTimeDataScientist/mkdocs-cms'
 repo_url: 'https://github.com/PartTimeDataScientist/mkdocs-wiki-test'
 
+# Plugins
+plugins:
+  - search
+  - awesome-pages
 # Extensions
 markdown_extensions:
   - toc:
@@ -45,20 +49,19 @@ markdown_extensions:
   - pymdownx.tilde
   - fontawesome_markdown
 # Page tree
-nav:
-  - 'Maas Wiki NRW': 'index.md'
-  - 'Einführung':
-    - Start: 'introduction/index.md'
-  - 'Beispiele':
-    - Start: 'examples/index.md'
-  - Erweiterungen:
-    - 'Admonition': 'extensions/admonition.md'
-    - 'CodeHilite': 'extensions/codehilite.md'
-    - 'Footnotes': 'extensions/footnotes.md'
-    - 'Metadata': 'extensions/metadata.md'
-    - 'Permalinks': 'extensions/permalinks.md'
-    - 'PyMdown': 'extensions/pymdown.md'
-  - 'Release notes': 'release-notes.md'
-  - 'License': 'license.md'
-  - 'Kontakt': 'kontakt.md'
-  - 'Impressum': 'impressum.md'
+#nav:
+#  - 'Maas Wiki NRW': 'index.md'
+#  - '"Wiki"-Benutzung': 'how-to.md'
+#  - 'Einführung':
+#    - Start: 'introduction/index.md'
+#  - Maas-Baukasten:
+#    - 'MaaS-Baukasten': 'examples/index.md'
+#  - Erweiterungen: 'extensions/*'
+#    - 'Admonition': 'extensions/admonition.md'
+    #- 'CodeHilite': 'extensions/codehilite.md'
+    #- 'Footnotes': 'extensions/footnotes.md'
+    #- 'Metadata': 'extensions/metadata.md'
+    #- 'Permalinks': 'extensions/permalinks.md'
+    #- 'PyMdown': 'extensions/pymdown.md'
+#  - 'Kontakt': 'kontakt.md'
+#  - 'Impressum': 'impressum.md'

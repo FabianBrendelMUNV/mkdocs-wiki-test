@@ -1,0 +1,9 @@
+nav:
+  - index.md
+  - 'Bedienung': how-to.md
+  - 'Überblick': introduction
+  - 'MaaS-Baukasten': examples
+  - 'Erweiterungen': extensions
+  - kontakt.md
+  - license.md
+  - ...
