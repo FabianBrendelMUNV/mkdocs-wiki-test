@@ -22,3 +22,9 @@
     font-size: 15px;
 }
 }
+
+:root {
+    --md-primary-fg-color:        #0082B9;
+    --md-primary-fg-color--light: #0A84FF;
+    --md-primary-fg-color--dark:  #00628b;
+  }
