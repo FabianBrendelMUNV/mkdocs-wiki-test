@@ -6,7 +6,7 @@ comments: true
 # Alles wichtige ist hier zu finden
 
 ## Material ist ein Theme für das MaaS Wiki
-
+![Ein Maas Held](images/hero_image%5B1%5D.svg)
  [MkDocs](http://www.mkdocs.org), ein ausgezeichneter Static Site Generator für Online-Dokumentationen. Das Design basiert auf Google's [Material Design](https://www.google.com/design/spec/material-design)
 Richtlinien.
 
@@ -36,6 +36,6 @@ Weitere detaillierte Instruktionen sind hier [getting started guide](getting-sta
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIzNjE5NDA3LC01OTE0MjE2ODUsMjgxMT
-Q1MjMyXX0=
+eyJoaXN0b3J5IjpbMTA4MTQyMiwtNTkxNDIxNjg1LDI4MTE0NT
+IzMl19
 -->
