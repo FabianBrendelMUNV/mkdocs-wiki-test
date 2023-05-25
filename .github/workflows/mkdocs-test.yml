@@ -53,6 +53,8 @@ jobs:
 
       - run: mkdocs build --config-file ./mkdocs.yml
 
+      - run: mkauthdocs maas mobidrom site/ --heading "Login to Maas NRW Wiki Demo Site"
+
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
