@@ -1,6 +1,6 @@
 mkdocs
 mkdocs-material
-mkdocs-nav-weight
+mkdocs-awesome-pages-plugin
 pymdown-extensions
 fontawesome-markdown
 mkauthdocs
