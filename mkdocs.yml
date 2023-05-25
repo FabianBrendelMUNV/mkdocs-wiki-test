@@ -1,7 +1,9 @@
-site_name: CMS-Demo Site
+site_name: Maas Wiki NRW Demo
 theme:
   name: material
   custom_dir: material/overrides
+  palette:
+    primary: custom
 
 extra:
   social:
@@ -9,9 +11,6 @@ extra:
       link: 'https://github.com/PartTimeDataScientist/mkdocs-wiki-test'
   feature:
     tabs: true
-  palette:
-    primary: indigo
-    accent: pink
 
 extra_css:
   - 'stylesheets/extra.css'
@@ -42,10 +41,9 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
   - fontawesome_markdown
-
 # Page tree
 nav:
-  - 'MkDocs-CMS': 'index.md'
+  - 'Maas Wiki NRW': 'index.md'
   - 'MkDocs Dokumentation': 'mkdocs.md'
   - 'Getting started': 'getting-started.md'
   - 'HTML-Elemente': 'specimen.md'
