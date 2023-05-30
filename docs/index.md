@@ -1,7 +1,7 @@
 ---
 title: 'Maas Wiki NRW'
 date: 08.05.2017
-comments: false
+comments: true
 ---
 # Alles wichtige ist hier zu finden
 
