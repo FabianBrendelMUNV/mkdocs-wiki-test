@@ -9,7 +9,7 @@ weight: 1
 !!! note
     Diese Webseite wird automatisch mittels MkDocs aus einem [GitHub-Repository](https://github.com/PartTimeDataScientist/mkdocs-wiki-test) erzeugt.
 
-**test**
+****
 
 ## Voraussetzungen
 Um die Kommentarfunktion benutzen zu können, "Issues" zu erstellen oder Texte ergänzen oder editieren zu können ist ein [Github](https://github.com)-Account notwendig. Dieser ist grundsätzlich erst einmal kostenlos erstellbar und damit lässt sich die Kommentar-Funktion direkt verwenden. Um Änderungen oder Ergänzungen auf den Seiten vornehmen zu können müssen zunächst von [Lars Röglin](mailto:lars.roeglin@strassen.nrw.de) Berechtigungen freigegeben werden.
@@ -51,5 +51,5 @@ Bilder lassen sich bei Verwendung von StackEdit nicht einfach über copy&paste i
 Anwender mit Git-Kenntnissen können sich nach Freigabe der Berechtigungen das entsprechende [Repository](git@github.com:PartTimeDataScientist/mkdocs-wiki-test.git) einfach klonen und lokal auf ihrem Rechner bearbeiten und Änderungen zurück zu Github pushen.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA2NzEwODgzXX0=
+eyJoaXN0b3J5IjpbLTExMzMzNDk0MjMsNzA2NzEwODgzXX0=
 -->
