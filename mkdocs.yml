@@ -5,20 +5,19 @@ theme:
   palette:
     primary: custom
   features:
-    - content.action.view
     - content.action.edit
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
     - navigation.top
   icon:
-    repo: fontawesom/brands/github
+    repo: fontawesome/brands/github
     view: material/eye
     edit: material/pencil 
 
-repo_name: 'PartTimeDataScientist/mkdocs-cms'
+repo_name: 'MaaS Wiki on Github'
 repo_url: 'https://github.com/PartTimeDataScientist/mkdocs-wiki-test'
-edit_uri: 'blob/master/docs/'
+edit_uri: 'edit/master/docs/'
 
 extra:
   social:
@@ -50,6 +49,9 @@ extra_javascript:
 plugins:
   - search
   - awesome-pages
+  - git-revision-date-localized:
+      enable_creation_date: true
+
 # Extensions
 markdown_extensions:
   - toc:
@@ -73,8 +75,6 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
   - fontawesome_markdown
-  - git-revision-date-localized:
-      enable_creation_date: true
 # Page tree
 #nav:
 #  - 'Maas Wiki NRW': 'index.md'
