@@ -38,6 +38,7 @@ extra_javascript:
 
 repo_name: 'PartTimeDataScientist/mkdocs-cms'
 repo_url: 'https://github.com/PartTimeDataScientist/mkdocs-wiki-test'
+edit_uri: blob/master/docs/
 
 # Plugins
 plugins:
