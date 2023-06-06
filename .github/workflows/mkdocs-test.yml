@@ -55,6 +55,11 @@ jobs:
 
       - run: mkauthdocs maas mobidrom site/ --heading "Login to Maas NRW Wiki Demo Site"
 
+      - uses: actions/upload-artifact@v2
+        with:
+          name: website
+          path: site/
+
 #      - name: 📂 Sync files
 #        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
 #        with:
@@ -68,15 +73,20 @@ jobs:
     runs-on: ubuntu-22.04
     environment: 'Live deployment'
     steps:
-      - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        with:
-          server: mkdocs-wiki-test.roeglin-data.de
-          protocol: ftps
-          username: mkdocs-wiki-test
-          password: ${{ secrets.ftps_password }}
-          local-dir: site/
+    - uses: actions/checkout@v2
 
+    - uses: actions/download-artifact@v2
+      with:
+        name: website
+      
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: mkdocs-wiki-test.roeglin-data.de
+        protocol: ftps
+        username: mkdocs-wiki-test
+        password: ${{ secrets.ftps_password }}
+        local-dir: site/
 
 #      - name: Deploy to GitHub Pages
 #        if: github.ref == 'refs/heads/main'
