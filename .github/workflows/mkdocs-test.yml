@@ -22,7 +22,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  prepare:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
@@ -55,6 +55,19 @@ jobs:
 
       - run: mkauthdocs maas mobidrom site/ --heading "Login to Maas NRW Wiki Demo Site"
 
+#      - name: 📂 Sync files
+#        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+#        with:
+#          server: mkdocs-wiki-test.roeglin-data.de
+#          protocol: ftps
+#          username: mkdocs-wiki-test
+#          password: ${{ secrets.ftps_password }}
+#          local-dir: site/
+
+  deploy:
+    runs-on: ubuntu-22.04
+    environment: 'Live deployment'
+    steps:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
