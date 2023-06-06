@@ -79,6 +79,7 @@ jobs:
     - uses: actions/download-artifact@v2
       with:
         name: website
+        path: site/
       
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
