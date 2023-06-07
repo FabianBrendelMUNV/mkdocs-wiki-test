@@ -21,10 +21,10 @@ Eine einfache Möglichkeit, die Seiten zu bearbeiten ist die Verwendung von [Sta
 !!! note 
     Wenn noch kein GitHub-Account vorhanden ist kann dieser bei diesem Schritt auch erstellt werden!
 
-![Schritt 1](../images/stackedit-01-side-bar.png)
-![Schritt 2](../images/stackedit-02-accounts.png)
-![Schritt 3](../images/stackedit-03-github-account.png)
-![Schritt 4](../images/stackedit-04-gh-password.png)
+![Schritt 1](images/stackedit-01-side-bar.png)
+![Schritt 2](images/stackedit-02-accounts.png)
+![Schritt 3](images/stackedit-03-github-account.png)
+![Schritt 4](images/stackedit-04-gh-password.png)
 
 Nach Verknüpfung des Accoungs muss das entsprechende "Repository" noch als "Workspace" eingebunden werden. Dies geschieht ebenfalls über die Sidebar. Hierzu wird ein GitHub workspace mit den folgenden Daten angelegt:
 
@@ -33,16 +33,16 @@ Nach Verknüpfung des Accoungs muss das entsprechende "Repository" noch als "Wor
     **Folder path:** docs  
     **Branch:** master 
 
-![Schritt 5](../images/stackedit-05-workspace01.png)
-![Schritt 6](../images/stackedit-06-workspace02.png)
+![Schritt 5](images/stackedit-05-workspace01.png)
+![Schritt 6](images/stackedit-06-workspace02.png)
 
 Wenn der Workspace erfolgreich angelegt wurde können in der linken Sidebar die bestehenden Dokumente eingesehen bzw. auch neue angelegt werden: 
 
-![Schritt 7](../images/stackedit-07-left-sidebar.png)
+![Schritt 7](images/stackedit-07-left-sidebar.png)
 
 Zum "speichern" bzw. synchronisieren mit GitHub den "Synchronisieren"-Button benutzen. Die Änderungen werden zu GitHub synchronisiert und anschließend wird automatisch eine neue Version der Webseite erzeugt und "hochgeladen".
 
-![Schritt 8](../images/stackedit-08-synchronize.png)
+![Schritt 8](images/stackedit-08-synchronize.png)
 
 ### Einfügen von Bildern mit StackEdit
 Bilder lassen sich bei Verwendung von StackEdit nicht einfach über copy&paste in eine Seite eingefügt werden, sondern müssen hierfür zunächst zu GitHub hochgeladen werden. Dies geht am einfachsten über den "Add file" Button im [enstprechenden Ordner](https://github.com/PartTimeDataScientist/mkdocs-wiki-test/tree/master/docs/images) des Repositories. Nach dem Hochladen der Datei kann diese in StackEdit über die relative URL (in der Regel entweder "images/filename.png" oder "../images/filename.png") eingebunden werden.
