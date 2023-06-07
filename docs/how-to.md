@@ -9,7 +9,7 @@ weight: 1
 !!! note
     Diese Webseite wird automatisch mittels MkDocs aus einem [GitHub-Repository](https://github.com/PartTimeDataScientist/mkdocs-wiki-test) erzeugt.
 
-**     HIER soll eine neue Headline eingebaut werden!    **
+***     HIER soll eine neue Headline eingebaut werden!    ***
 
 ## Voraussetzungen
 Um die Kommentarfunktion benutzen zu können, "Issues" zu erstellen oder Texte ergänzen oder editieren zu können ist ein [Github](https://github.com)-Account notwendig. Dieser ist grundsätzlich erst einmal kostenlos erstellbar und damit lässt sich die Kommentar-Funktion direkt verwenden. Um Änderungen oder Ergänzungen auf den Seiten vornehmen zu können müssen zunächst von [Lars Röglin](mailto:lars.roeglin@strassen.nrw.de) Berechtigungen freigegeben werden.
