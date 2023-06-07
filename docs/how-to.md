@@ -11,6 +11,8 @@ weight: 1
 
 ***     HIER soll eine neue Headline eingebaut werden!    ***
 
+
+
 ## Voraussetzungen
 Um die Kommentarfunktion benutzen zu können, "Issues" zu erstellen oder Texte ergänzen oder editieren zu können ist ein [Github](https://github.com)-Account notwendig. Dieser ist grundsätzlich erst einmal kostenlos erstellbar und damit lässt sich die Kommentar-Funktion direkt verwenden. Um Änderungen oder Ergänzungen auf den Seiten vornehmen zu können müssen zunächst von [Lars Röglin](mailto:lars.roeglin@strassen.nrw.de) Berechtigungen freigegeben werden.
 
@@ -21,10 +23,10 @@ Eine einfache Möglichkeit, die Seiten zu bearbeiten ist die Verwendung von [Sta
 !!! note 
     Wenn noch kein GitHub-Account vorhanden ist kann dieser bei diesem Schritt auch erstellt werden!
 
-![Schritt 1](images/stackedit-01-side-bar.png)
-![Schritt 2](images/stackedit-02-accounts.png)
-![Schritt 3](images/stackedit-03-github-account.png)
-![Schritt 4](images/stackedit-04-gh-password.png)
+![Schritt 1](images/stackedit-01-side-bar.png)  
+![Schritt 2](images/stackedit-02-accounts.png)  
+![Schritt 3](images/stackedit-03-github-account.png)  
+![Schritt 4](images/stackedit-04-gh-password.png)  
 
 Nach Verknüpfung des Accoungs muss das entsprechende "Repository" noch als "Workspace" eingebunden werden. Dies geschieht ebenfalls über die Sidebar. Hierzu wird ein GitHub workspace mit den folgenden Daten angelegt:
 
@@ -47,9 +49,9 @@ Zum "speichern" bzw. synchronisieren mit GitHub den "Synchronisieren"-Button ben
 ### Einfügen von Bildern mit StackEdit
 Bilder lassen sich bei Verwendung von StackEdit nicht einfach über copy&paste in eine Seite eingefügt werden, sondern müssen hierfür zunächst zu GitHub hochgeladen werden. Dies geht am einfachsten über den "Add file" Button im [enstprechenden Ordner](https://github.com/PartTimeDataScientist/mkdocs-wiki-test/tree/master/docs/images) des Repositories. Nach dem Hochladen der Datei kann diese in StackEdit über die relative URL (in der Regel entweder "images/filename.png" oder "../images/filename.png") eingebunden werden.
 
+### Intermediate mit Online VSCode Editor
+Der gesamte Text des Wikis lässt sich auch durch eine von Github bereitgestellte Online-Version von Visual Studio Code bearbeiten. Hierbei stehen die wichtigsten Funktionen von VS Code einfach im Browser zur Verfügung. In diesem Online-Editor können mehrere Dateien gleichzeitig bearbeitet werden und in einer "Änderung" zusammengefasst werden. Zusätzlich erlaubt der Editor den einfach Upload von Bilder direkt im gleichen User Interface. Um diesen Editor aufzurufen reicht es aus, in der URL des Github-Repositories das ".com" durch ein ".dev" auszutauschen. Die URL für das aktuelle Repository ist demnach:  
+[https://github.dev/PartTimeDataScientist/mkdocs-wiki-test](https://github.dev/PartTimeDataScientist/mkdocs-wiki-test)
+
 ### "Advanced" mit Git und beliebigem Editor oder IDE
 Anwender mit Git-Kenntnissen können sich nach Freigabe der Berechtigungen das entsprechende [Repository](git@github.com:PartTimeDataScientist/mkdocs-wiki-test.git) einfach klonen und lokal auf ihrem Rechner bearbeiten und Änderungen zurück zu Github pushen.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDg3MzgyNTcsNzA2NzEwODgzXX0=
--->
