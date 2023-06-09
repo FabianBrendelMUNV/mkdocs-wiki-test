@@ -2,8 +2,20 @@ site_name: Maas Wiki NRW Demo
 theme:
   name: material
   custom_dir: material/overrides
+  primary: custom
   palette:
-    primary: custom
+    # Palette toggle for light mode
+    - scheme: custom
+      toggle:
+        icon: material/lightbulb 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+
   features:
     - content.action.edit
     - navigation.tabs
