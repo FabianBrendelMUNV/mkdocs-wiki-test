@@ -6,8 +6,8 @@
   <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.f7ec4df2.min.css' | url }}">
 {% endblock %}
 {% block announce %}
-  <strong>THIS IS THE PREVIEW VERSION OF THE MAAS-WIKI</strong></ br>
-  <strong>IT MAY CONTAIN INACCURATE OR OUTDATED INFORMATION</strong>
+  <strong>THIS IS THE PREVIEW VERSION OF THE MAAS-WIKI</strong></ br></br>
+  <p><strong>IT MAY CONTAIN INACCURATE OR OUTDATED INFORMATION</strong>
 {% endblock %}
 {% block scripts %}
   {{ super() }}
