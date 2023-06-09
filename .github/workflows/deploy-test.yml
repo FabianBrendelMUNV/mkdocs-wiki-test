@@ -51,8 +51,8 @@ jobs:
       - name: Install dependencies
         run: python3 -m pip install -r ./requirements.txt
 
-      - name: Override home for announcement on test-site
-        run: mv material/main.html material/main.html.live && mv material/main.html.test material/main.html
+#    - name: Override home for announcement on test-site
+#     run: mv material/main.html material/main.html.live && mv material/main.html.test material/main.html
 
       - run: mkdocs build --config-file ./mkdocs.yml
 
