@@ -71,27 +71,7 @@ jobs:
 
   deploy-test:
     runs-on: ubuntu-22.04
-    steps:
-    - uses: actions/checkout@v2
-
-    - uses: actions/download-artifact@v2
-      with:
-        name: website
-        path: site/
-      
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: mkdocs-wiki-test.roeglin-data.de
-        protocol: ftps
-        username: mkdocs-wiki-test
-        password: ${{ secrets.ftps_password }}
-        local-dir: site/
-
-  deploy-live:
-    runs-on: ubuntu-22.04
     needs: prepare
-    environment: 'Live deployment'
     steps:
     - uses: actions/checkout@v2
 
