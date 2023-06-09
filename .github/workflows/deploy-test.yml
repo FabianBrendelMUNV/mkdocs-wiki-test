@@ -1,4 +1,4 @@
-name: MkDocs-Deploy
+name: Deploy to test website
 
 on:
   # Runs on pushes targeting the default branch
