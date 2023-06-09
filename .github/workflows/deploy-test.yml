@@ -1,4 +1,15 @@
-name: Deploy to test website
+############################################################################
+############################################################################
+####
+####
+####  THIS FILE CONTAINS THE WORKFLOW TO DEPLOY TO THE TEST WEBSITE
+####
+####  DO NOT MODIFY UNLESS YOU KNOW WHAT YOU ARE DOING
+####
+####
+#############################################################################
+#############################################################################
+name: Deploy PREVIEW Site
 
 on:
   # Runs on pushes targeting the default branch

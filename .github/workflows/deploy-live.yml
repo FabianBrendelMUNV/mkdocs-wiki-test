@@ -1,4 +1,15 @@
-name: Deploy to live website
+############################################################################
+############################################################################
+####
+####
+####  THIS FILE CONTAINS THE WORKFLOW TO DEPLOY TO THE LIVE WEBSITE
+####
+####  DO NOT MODIFY UNLESS YOU KNOW WHAT YOU ARE DOING
+####
+####
+#############################################################################
+#############################################################################
+name: Deploy LIVE Site
 
 on:
   # Runs on pushes targeting the default branch
