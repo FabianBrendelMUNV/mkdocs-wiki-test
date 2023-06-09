@@ -60,16 +60,35 @@ jobs:
           name: website
           path: site/
 
-#      - name: 📂 Sync files
-#        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-#        with:
-#          server: mkdocs-wiki-test.roeglin-data.de
-#          protocol: ftps
-#          username: mkdocs-wiki-test
-#          password: ${{ secrets.ftps_password }}
-#          local-dir: site/
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: mkdocs-wiki-test.roeglin-data.de
+          protocol: ftps
+          username: mkdocs-wiki-test
+          password: ${{ secrets.ftps_password }}
+          local-dir: site/
 
-  deploy:
+  deploy-test:
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/download-artifact@v2
+      with:
+        name: website
+        path: site/
+      
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: mkdocs-wiki-test.roeglin-data.de
+        protocol: ftps
+        username: mkdocs-wiki-test
+        password: ${{ secrets.ftps_password }}
+        local-dir: site/
+
+  deploy-live:
     runs-on: ubuntu-22.04
     needs: prepare
     environment: 'Live deployment'
@@ -89,10 +108,3 @@ jobs:
         username: mkdocs-wiki-test
         password: ${{ secrets.ftps_password }}
         local-dir: site/
-
-#      - name: Deploy to GitHub Pages
-#        if: github.ref == 'refs/heads/main'
-#        uses: peaceiris/actions-gh-pages@v3.9.3
-#        with:
-#          github_token: ${{ secrets.GITHUB_TOKEN }}
-#          publish_dir: ./site
