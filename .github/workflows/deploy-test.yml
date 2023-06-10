@@ -85,9 +85,6 @@ jobs:
 
   deploy-test:
     runs-on: ubuntu-22.04
-    env: 
-      CI_COMMIT_MESSAGE: Preview Website Rendered by MkDocs
-      CI_COMMIT_AUTHOR: Continuous Integration    
     needs: prepare
     steps:
     - uses: actions/checkout@v3
@@ -96,6 +93,15 @@ jobs:
       with:
         name: website
         path: site/
+
+    - name: Setup env var
+      run: |
+        MESSAGE=$(cat << EOF
+        'Build from ${{ GITHUB_SHA::12 }}'
+        -'${{ github.event.head_commit.message }}'
+        EOF
+        )
+        echo MESSAGE_SHA=$MESSAGE >> $GITHUB_ENV
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
@@ -106,7 +112,7 @@ jobs:
         #force_orphan: true
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'   
-        full_commit_message: "Build from ${{ GITHUB_SHA::12 }} - ${{ github.event.head_commit.message }}"
+        full_commit_message: '${{ env.MESSAGE_SHA }}'
 
 #    - name: Push to preview branch
 #      run: |
