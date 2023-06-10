@@ -90,7 +90,7 @@ jobs:
       CI_COMMIT_AUTHOR: Continuous Integration    
     needs: prepare
     steps:
-    - uses: actions/checkout@v3
+#    - uses: actions/checkout@v3
 
     - uses: actions/download-artifact@v3
       with:
@@ -102,7 +102,7 @@ jobs:
         git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
         git config --global user.email "username@users.noreply.github.com"
         git add site -f
-        git commit -a -m "Build from ${GITHUB_SHA::6}"
+        git commit -a -m "Build from ${GITHUB_SHA::12}"
         git push -f origin HEAD:preview-site
 
     - name: 📂 Sync files
