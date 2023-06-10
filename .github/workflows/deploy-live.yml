@@ -82,22 +82,36 @@ jobs:
 
   deploy-live:
     runs-on: ubuntu-22.04
-    timeout-minutes: 60
     needs: prepare
     environment: 'Live deployment'
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
-    - uses: actions/download-artifact@v2
+    - uses: actions/download-artifact@v3
       with:
         name: website
         path: site/
-      
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+
+    - name: Setup commit message for deployment
+      run: |
+        MESSAGE=$(cat << EOF
+        Deploy von commit: ${GITHUB_SHA::7} - 
+        ${{ github.event.head_commit.message }}
+        EOF
+        )
+        echo MESSAGE_SHA=$MESSAGE >> $GITHUB_ENV
+
+    - name: Check commit message for deployment
+      run: |
+        echo ${{ env.MESSAGE_SHA }}
+
+    - name: Deploy to preview branch
+      uses: peaceiris/actions-gh-pages@v3
       with:
-        server: mkdocs-wiki-test.roeglin-data.de
-        protocol: ftps
-        username: mkdocs-wiki-test
-        password: ${{ secrets.ftps_password }}
-        local-dir: site/
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./site
+        publish_branch: live-site
+        #force_orphan: true
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'   
+        full_commit_message: '${{ env.MESSAGE_SHA }}'
