@@ -74,6 +74,7 @@ jobs:
           name: website
           path: site/
 
+      # Temporary upload until Cloudflare setup is working
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
@@ -94,20 +95,20 @@ jobs:
         name: website
         path: site/
 
-    - name: Setup env var
+    - name: Setup commit message for deployment
       run: |
         MESSAGE=$(cat << EOF
         '${{ github.event.head_commit.message }}'
-        -'${{ github.sha }}'
+        -'${{ github.sha::12 }}'
         EOF
         )
         echo MESSAGE_SHA=$MESSAGE >> $GITHUB_ENV
 
-    - name: Check env var
+    - name: Check commit message for deployment
       run: |
         echo ${{ env.MESSAGE_SHA }}
 
-    - name: Deploy
+    - name: Deploy to preview branch
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -117,20 +118,3 @@ jobs:
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'   
         full_commit_message: '${{ env.MESSAGE_SHA }}'
-
-#    - name: Push to preview branch
-#      run: |
-#        git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
-#        git config --global user.email "username@users.noreply.github.com"
-#        git add site -f
-#        git commit -a -m "Build from ${GITHUB_SHA::12}"
-#        git push -f origin HEAD:preview-site
-
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: mkdocs-wiki-test.roeglin-data.de
-        protocol: ftps
-        username: mkdocs-wiki-test
-        password: ${{ secrets.ftps_password }}
-        local-dir: site/
