@@ -97,7 +97,7 @@ jobs:
     - name: Setup env var
       run: |
         MESSAGE=$(cat << EOF
-        'Build from ${{ GITHUB_SHA::12 }}'
+        'Build from: '-'${{ GITHUB_SHA::6 }}'
         -'${{ github.event.head_commit.message }}'
         EOF
         )
