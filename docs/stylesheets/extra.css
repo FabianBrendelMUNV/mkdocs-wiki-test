@@ -25,13 +25,40 @@
 
 @media only screen and (min-width: 76.25em) {
 
-.md-tabs~.md-main .md-nav--primary>.md-nav__list>.md-nav__item--nested {
-    font-size: 15px;
+    .md-tabs~.md-main .md-nav--primary>.md-nav__list>.md-nav__item--nested {
+        font-size: 15px;
+    }
 }
+
+[data-md-color-scheme="maas"] {
+    /* Primary color shades */
+    --md-primary-fg-color: #0082B9;
+    --md-primary-fg-color--light: #0082B994;
+    --md-primary-fg-color--dark: #0082B9;
+    --md-primary-bg-color: hsla(0, 0%, 100%, 1);
+    --md-primary-bg-color--light: hsla(0, 0%, 100%, 0.7);
+    --md-text-link-color: hsla(231, 48%, 48%, 1);
+
+    /* Accent color shades */
+    --md-accent-fg-color: #f39201;
+    --md-accent-fg-color--transparent: hsla(189, 100%, 37%, 0.1);
+    --md-accent-bg-color: hsla(0, 0%, 100%, 1);
+    --md-accent-bg-color--light: hsla(0, 0%, 100%, 0.7);
+
+    /* Code block color shades */
+    --md-code-bg-color: hsla(0, 0%, 96%, 1);
+    --md-code-fg-color: hsla(200, 18%, 26%, 1);
+
+    /* Footer */
+    --md-footer-bg-color: #f39201;
+    --md-footer-bg-color--dark: hsla(0, 0%, 0%, 0.1);
+    --md-footer-fg-color: hsla(0, 0%, 100%, 1);
+    --md-footer-fg-color--light: hsla(0, 0%, 100%, 0.7);
+    --md-footer-fg-color--lighter: hsla(0, 0%, 100%, 0.3);
 }
 
 :root {
     --md-primary-fg-color:        #0082B9;
     --md-primary-fg-color--light: #0A84FF;
     --md-primary-fg-color--dark:  #00628b;
-  }
+}

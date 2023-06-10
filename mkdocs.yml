@@ -1,20 +1,21 @@
-site_name: Maas Wiki NRW Demo
+site_name: MaaS NRW Wiki - Demo Site
 theme:
   name: material
   custom_dir: material/overrides
-  primary: custom
   palette:
     # Palette toggle for light mode
-    - scheme: custom
+    - scheme: maas
+      primary: custom
+      accent: custom
       toggle:
         icon: material/lightbulb 
-        name: Switch to dark mode
+        name: Licht aus
 
     # Palette toggle for dark mode
     - scheme: slate
       toggle:
         icon: material/lightbulb-outline
-        name: Switch to light mode
+        name: Licht an
 
   features:
     - content.action.edit
@@ -27,7 +28,7 @@ theme:
     view: material/eye
     edit: material/pencil 
 
-repo_name: 'MaaS Wiki on Github'
+repo_name: 'MaaS NRW Wiki auf Github'
 repo_url: 'https://github.com/PartTimeDataScientist/mkdocs-wiki-test'
 edit_uri: 'edit/master/docs/'
 
@@ -44,7 +45,7 @@ extra:
           name: Diese Seite ist super!
           data: 1
           note: >-
-            Thanks for your feedback!
+            Danke für das Feedback!
         - icon: material/emoticon-sad-outline
           name: Hier gibt es was zu verbessern!
           data: 0
@@ -61,8 +62,7 @@ extra_javascript:
 plugins:
   - search
   - awesome-pages
-  - git-revision-date-localized:
-      enable_creation_date: true
+  - git-revision-date-localized
 
 # Extensions
 markdown_extensions:
@@ -87,20 +87,4 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
   - fontawesome_markdown
-# Page tree
-#nav:
-#  - 'Maas Wiki NRW': 'index.md'
-#  - '"Wiki"-Benutzung': 'how-to.md'
-#  - 'Einführung':
-#    - Start: 'introduction/index.md'
-#  - Maas-Baukasten:
-#    - 'MaaS-Baukasten': 'examples/index.md'
-#  - Erweiterungen: 'extensions/*'
-#    - 'Admonition': 'extensions/admonition.md'
-    #- 'CodeHilite': 'extensions/codehilite.md'
-    #- 'Footnotes': 'extensions/footnotes.md'
-    #- 'Metadata': 'extensions/metadata.md'
-    #- 'Permalinks': 'extensions/permalinks.md'
-    #- 'PyMdown': 'extensions/pymdown.md'
-#  - 'Kontakt': 'kontakt.md'
-#  - 'Impressum': 'impressum.md'
+
