@@ -69,7 +69,7 @@ jobs:
 
       - run: mkauthdocs maas mobidrom site/ --heading "Login to Maas NRW Wiki Demo Site"
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: website
           path: site/
@@ -85,15 +85,26 @@ jobs:
 
   deploy-test:
     runs-on: ubuntu-22.04
+    env: 
+      CI_COMMIT_MESSAGE: Preview Website Rendered by MkDocs
+      CI_COMMIT_AUTHOR: Continuous Integration    
     needs: prepare
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
-    - uses: actions/download-artifact@v2
+    - uses: actions/download-artifact@v3
       with:
         name: website
         path: site/
-      
+
+    - name: Push to preview branch
+      run: |
+        git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+        git config --global user.email "username@users.noreply.github.com"
+        git add site
+        git commit -a -m "Build from ${GITHUB_SHA::6}"
+        git push origin HEAD:preview-site
+
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
