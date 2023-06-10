@@ -90,20 +90,31 @@ jobs:
       CI_COMMIT_AUTHOR: Continuous Integration    
     needs: prepare
     steps:
-#    - uses: actions/checkout@v3
+    - uses: actions/checkout@v3
 
     - uses: actions/download-artifact@v3
       with:
         name: website
         path: site/
 
-    - name: Push to preview branch
-      run: |
-        git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
-        git config --global user.email "username@users.noreply.github.com"
-        git add site -f
-        git commit -a -m "Build from ${GITHUB_SHA::12}"
-        git push -f origin HEAD:preview-site
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./site
+        force_orphan: true
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'   
+        #commit_message: 'Build from ${GITHUB_SHA::12}'
+        #full_commit_message: ${{ github.event.head_commit.message }}'
+
+#    - name: Push to preview branch
+#      run: |
+#        git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+#        git config --global user.email "username@users.noreply.github.com"
+#        git add site -f
+#        git commit -a -m "Build from ${GITHUB_SHA::12}"
+#        git push -f origin HEAD:preview-site
 
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
