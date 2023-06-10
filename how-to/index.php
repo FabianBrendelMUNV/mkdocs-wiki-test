@@ -33,7 +33,7 @@
     
     
       
-        <title>Bedienungshinweise - Maas Wiki NRW Demo</title>
+        <title>Einführung - Maas Wiki NRW Demo</title>
       
     
     
@@ -137,7 +137,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Bedienungshinweise
+              Einführung
             
           </span>
         </div>
@@ -921,7 +921,7 @@
               
                 
               
-              Danke für das Feedback! <a href="https://github.com/PartTimeDataScientist/mkdocs-wiki-test/issues/new/?title=[Feedback]+-+Bedienungshinweise+-+/how-to/" target="_blank">Sag uns gerne, was wir verbessern können!</a>
+              Danke für das Feedback! <a href="https://github.com/PartTimeDataScientist/mkdocs-wiki-test/issues/new/?title=[Feedback]+-+Einf%C3%BChrung+-+/how-to/" target="_blank">Sag uns gerne, was wir verbessern können!</a>
             </div>
           
         </div>
