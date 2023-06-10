@@ -106,8 +106,7 @@ jobs:
         #force_orphan: true
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'   
-        commit_message: 'Build from ${GITHUB_SHA::12}'
-        full_commit_message: ${{ github.event.head_commit.message }}'
+        full_commit_message: 'Build from ${{ GITHUB_SHA::12 }} - ${{ github.event.head_commit.message }}'
 
 #    - name: Push to preview branch
 #      run: |
