@@ -835,7 +835,6 @@
 <p class="admonition-title">Note</p>
 <p>Diese Webseite wird automatisch mittels MkDocs aus einem <a href="https://github.com/PartTimeDataScientist/mkdocs-wiki-test">GitHub-Repository</a> erzeugt.</p>
 </div>
-<p>***     HIER soll eine neue Headline eingebaut werden!    ***</p>
 <h2 id="voraussetzungen">Voraussetzungen<a class="headerlink" href="#voraussetzungen" title="Permanent link">#</a></h2>
 <p>Um die Kommentarfunktion benutzen zu können, &ldquo;Issues&rdquo; zu erstellen oder Texte ergänzen oder editieren zu können ist ein <a href="https://github.com">Github</a>-Account notwendig. Dieser ist grundsätzlich erst einmal kostenlos erstellbar und damit lässt sich die Kommentar-Funktion direkt verwenden. Um Änderungen oder Ergänzungen auf den Seiten vornehmen zu können müssen zunächst von <a href="mailto:lars.roeglin@strassen.nrw.de">Lars Röglin</a> Berechtigungen freigegeben werden.</p>
 <h2 id="bearbeitung-von-inhalten">Bearbeitung von Inhalten<a class="headerlink" href="#bearbeitung-von-inhalten" title="Permanent link">#</a></h2>
