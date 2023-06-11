@@ -67,22 +67,22 @@ jobs:
 
       - run: mkdocs build --config-file ./mkdocs.yml
 
-      - run: mkauthdocs maas mobidrom site/ --heading "Login to Maas NRW Wiki Demo Site"
+#      - run: mkauthdocs maas mobidrom site/ --heading "Login to Maas NRW Wiki Demo Site"
 
       - uses: actions/upload-artifact@v3
         with:
           name: website
           path: site/
 
-      # Temporary upload until Cloudflare setup is working
-      - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        with:
-          server: mkdocs-wiki-test.roeglin-data.de
-          protocol: ftps
-          username: mkdocs-wiki-test
-          password: ${{ secrets.ftps_password }}
-          local-dir: site/
+#      # Temporary upload until Cloudflare setup is working
+#      - name: 📂 Sync files
+#        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+#        with:
+#          server: mkdocs-wiki-test.roeglin-data.de
+#          protocol: ftps
+#          username: mkdocs-wiki-test
+#          password: ${{ secrets.ftps_password }}
+#          local-dir: site/
 
   deploy-test:
     runs-on: ubuntu-22.04
