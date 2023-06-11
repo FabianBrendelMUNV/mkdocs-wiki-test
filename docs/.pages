@@ -1,7 +1,7 @@
 nav:
   - index.md
   - 'Live Index': index.live.md
-  - 'Bedienung': how-to.md
+  - 'Bedienung': bedienung
   - 'Überblick': introduction
   - 'MaaS-Baukasten': examples
   - 'Erweiterungen': extensions
