@@ -133,7 +133,7 @@ jobs:
 #        gitHubToken: ${{ secrets.GITHUB_TOKEN }}
         # Optional: Switch what branch you are publishing to.
         # By default this will be the branch which triggered this workflow
-#        branch: master
+        branch: live-site
         # Optional: Change the working directory
 #        workingDirectory: /
         # Optional: Change the Wrangler version, allows you to point to a specific version or a tag such as `beta`
