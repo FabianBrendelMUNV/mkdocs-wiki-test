@@ -133,4 +133,4 @@ jobs:
       with:
         apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         accountId: 552371a041f9606c85c839ef41fb65e5
-        command: pages deploy --project-name=maas-nrw-wiki /
+        command: pages deploy --project-name=maas-nrw-wiki ./site
