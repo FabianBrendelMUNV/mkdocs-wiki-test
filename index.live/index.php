@@ -9,7 +9,7 @@
 			$dirname = preg_replace('~/+~', '/', $dirname);
 		}
 
-		header("Location: ".$dirname."../login.php?redirect=how-to/index.php");
+		header("Location: ".$dirname."../login.php?redirect=index.live/index.php");
 	}
 ?>
 
@@ -23,17 +23,17 @@
       
       
       
-        <link rel="prev" href="../index.live/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../introduction/">
+        <link rel="next" href="../how-to/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
     
     
       
-        <title>Einführung - MaaS NRW Wiki - Demo Site</title>
+        <title>MaaS NRW Wiki - MaaS NRW Wiki - Demo Site</title>
       
     
     
@@ -91,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#einfuhrung" class="md-skip">
+        <a href="#alles-wichtige-ist-hier-zu-finden" class="md-skip">
           Skip to content
         </a>
       
@@ -137,7 +137,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Einführung
+              MaaS NRW Wiki
             
           </span>
         </div>
@@ -241,10 +241,12 @@
         
   
   
+    
+  
 
 
   <li class="md-tabs__item">
-    <a href="../index.live/" class="md-tabs__link">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
       Live Index
     </a>
   </li>
@@ -253,12 +255,10 @@
         
   
   
-    
-  
 
 
   <li class="md-tabs__item">
-    <a href="./" class="md-tabs__link md-tabs__link--active">
+    <a href="../how-to/" class="md-tabs__link">
       Bedienung
     </a>
   </li>
@@ -407,21 +407,6 @@
 
   
   
-  
-    <li class="md-nav__item">
-      <a href="../index.live/" class="md-nav__link">
-        Live Index
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
     
   
   
@@ -434,12 +419,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Bedienung
+          Live Index
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Bedienung
+        Live Index
       </a>
       
         
@@ -458,50 +443,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#voraussetzungen" class="md-nav__link">
-    Voraussetzungen
+  <a href="#erstellt-mit-mkdocs-und-dem-mkdocs-material-theme" class="md-nav__link">
+    Erstellt mit MkDocs und dem MkDocs-Material Theme
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bearbeitung-von-inhalten" class="md-nav__link">
-    Bearbeitung von Inhalten
-  </a>
-  
-    <nav class="md-nav" aria-label="Bearbeitung von Inhalten">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#einfach-mit-stackedit" class="md-nav__link">
-    "Einfach" mit StackEdit
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#einfugen-von-bildern-mit-stackedit" class="md-nav__link">
-    Einfügen von Bildern mit StackEdit
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#intermediate-mit-online-vscode-editor" class="md-nav__link">
-    Intermediate mit Online VSCode Editor
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#advanced-mit-git-und-beliebigem-editor-oder-ide" class="md-nav__link">
-    "Advanced" mit Git und beliebigem Editor oder IDE
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -509,6 +453,21 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to/" class="md-nav__link">
+        Bedienung
+      </a>
     </li>
   
 
@@ -787,50 +746,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#voraussetzungen" class="md-nav__link">
-    Voraussetzungen
+  <a href="#erstellt-mit-mkdocs-und-dem-mkdocs-material-theme" class="md-nav__link">
+    Erstellt mit MkDocs und dem MkDocs-Material Theme
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bearbeitung-von-inhalten" class="md-nav__link">
-    Bearbeitung von Inhalten
-  </a>
-  
-    <nav class="md-nav" aria-label="Bearbeitung von Inhalten">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#einfach-mit-stackedit" class="md-nav__link">
-    "Einfach" mit StackEdit
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#einfugen-von-bildern-mit-stackedit" class="md-nav__link">
-    Einfügen von Bildern mit StackEdit
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#intermediate-mit-online-vscode-editor" class="md-nav__link">
-    Intermediate mit Online VSCode Editor
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#advanced-mit-git-und-beliebigem-editor-oder-ide" class="md-nav__link">
-    "Advanced" mit Git und beliebigem Editor oder IDE
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -849,7 +767,7 @@
                   
 
   
-    <a href="https://github.com/PartTimeDataScientist/mkdocs-wiki-test/edit/master/docs/how-to.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/PartTimeDataScientist/mkdocs-wiki-test/edit/master/docs/index.live.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
     </a>
@@ -857,44 +775,15 @@
   
 
 
-<h1 id="einfuhrung">Einführung<a class="headerlink" href="#einfuhrung" title="Permanent link">#</a></h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Diese Webseite wird automatisch mittels MkDocs aus einem <a href="https://github.com/PartTimeDataScientist/mkdocs-wiki-test">GitHub-Repository</a> erzeugt.</p>
-</div>
-<h2 id="voraussetzungen">Voraussetzungen<a class="headerlink" href="#voraussetzungen" title="Permanent link">#</a></h2>
-<p>Um die Kommentarfunktion benutzen zu können, &ldquo;Issues&rdquo; zu erstellen oder Texte ergänzen oder editieren zu können ist ein <a href="https://github.com">Github</a>-Account notwendig. Dieser ist grundsätzlich erst einmal kostenlos erstellbar und damit lässt sich die Kommentar-Funktion direkt verwenden. Um Änderungen oder Ergänzungen auf den Seiten vornehmen zu können müssen zunächst von <a href="mailto:lars.roeglin@strassen.nrw.de">Lars Röglin</a> Berechtigungen freigegeben werden.</p>
-<h2 id="bearbeitung-von-inhalten">Bearbeitung von Inhalten<a class="headerlink" href="#bearbeitung-von-inhalten" title="Permanent link">#</a></h2>
-<h3 id="einfach-mit-stackedit">&ldquo;Einfach&rdquo; mit StackEdit<a class="headerlink" href="#einfach-mit-stackedit" title="Permanent link">#</a></h3>
-<p>Eine einfache Möglichkeit, die Seiten zu bearbeiten ist die Verwendung von <a href="https://stackedit.io/app#">StackEdit</a>. Hierzu muss StackEdit zunächst mit dem GitHub-Account verbunden werden.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Wenn noch kein GitHub-Account vorhanden ist kann dieser bei diesem Schritt auch erstellt werden!</p>
-</div>
-<p><img alt="Schritt 1" src="../images/stackedit-01-side-bar.png" /><br />
-<img alt="Schritt 2" src="../images/stackedit-02-accounts.png" /><br />
-<img alt="Schritt 3" src="../images/stackedit-03-github-account.png" /><br />
-<img alt="Schritt 4" src="../images/stackedit-04-gh-password.png" />  </p>
-<p>Nach Verknüpfung des Accoungs muss das entsprechende &ldquo;Repository&rdquo; noch als &ldquo;Workspace&rdquo; eingebunden werden. Dies geschieht ebenfalls über die Sidebar. Hierzu wird ein GitHub workspace mit den folgenden Daten angelegt:</p>
+<h1 id="alles-wichtige-ist-hier-zu-finden">Alles wichtige ist hier zu finden<a class="headerlink" href="#alles-wichtige-ist-hier-zu-finden" title="Permanent link">#</a></h1>
+<h2 id="erstellt-mit-mkdocs-und-dem-mkdocs-material-theme">Erstellt mit MkDocs und dem MkDocs-Material Theme<a class="headerlink" href="#erstellt-mit-mkdocs-und-dem-mkdocs-material-theme" title="Permanent link">#</a></h2>
+<p><img alt="Ein Maas Held" src="../images/hero_image%5B1%5D.svg" />
+ Diese Seite wurde erzeugt von <a href="http://www.mkdocs.org">MkDocs</a>, einem ausgezeichneten Static Site Generator für Online-Dokumentationen. Das Design verwendet <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>.</p>
+<p><a href="https://mkdocs-wiki-test.roeglin-data.de"><img alt="enter image description here" src="../images/DSC04058%20%28Gro%C3%9F%29.png" /></a></p>
 <div class="admonition warning">
-<p class="admonition-title">Repository-Daten</p>
-<p><strong>Repository URL:</strong> <a href="https://github.com/PartTimeDataScientist/mkdocs-wiki-test">https://github.com/PartTimeDataScientist/mkdocs-wiki-test</a> <br />
-<strong>Folder path:</strong> docs<br />
-<strong>Branch:</strong> master </p>
+<p class="admonition-title">Achtung!</p>
+<p>Preview for internal use ons</p>
 </div>
-<p><img alt="Schritt 5" src="../images/stackedit-05-workspace01.png" />
-<img alt="Schritt 6" src="../images/stackedit-06-workspace02.png" /></p>
-<p>Wenn der Workspace erfolgreich angelegt wurde können in der linken Sidebar die bestehenden Dokumente eingesehen bzw. auch neue angelegt werden: </p>
-<p><img alt="Schritt 7" src="../images/stackedit-07-left-sidebar.png" /></p>
-<p>Zum &ldquo;speichern&rdquo; bzw. synchronisieren mit GitHub den &ldquo;Synchronisieren&rdquo;-Button benutzen. Die Änderungen werden zu GitHub synchronisiert und anschließend wird automatisch eine neue Version der Webseite erzeugt und &ldquo;hochgeladen&rdquo;.</p>
-<p><img alt="Schritt 8" src="../images/stackedit-08-synchronize.png" /></p>
-<h3 id="einfugen-von-bildern-mit-stackedit">Einfügen von Bildern mit StackEdit<a class="headerlink" href="#einfugen-von-bildern-mit-stackedit" title="Permanent link">#</a></h3>
-<p>Bilder lassen sich bei Verwendung von StackEdit nicht einfach über copy&amp;paste in eine Seite eingefügt werden, sondern müssen hierfür zunächst zu GitHub hochgeladen werden. Dies geht am einfachsten über den &ldquo;Add file&rdquo; Button im <a href="https://github.com/PartTimeDataScientist/mkdocs-wiki-test/tree/master/docs/images">enstprechenden Ordner</a> des Repositories. Nach dem Hochladen der Datei kann diese in StackEdit über die relative URL (in der Regel entweder &ldquo;images/filename.png&rdquo; oder &ldquo;../images/filename.png&rdquo;) eingebunden werden.</p>
-<h3 id="intermediate-mit-online-vscode-editor">Intermediate mit Online VSCode Editor<a class="headerlink" href="#intermediate-mit-online-vscode-editor" title="Permanent link">#</a></h3>
-<p>Der gesamte Text des Wikis lässt sich auch durch eine von Github bereitgestellte Online-Version von Visual Studio Code bearbeiten. Hierbei stehen die wichtigsten Funktionen von VS Code einfach im Browser zur Verfügung. In diesem Online-Editor können mehrere Dateien gleichzeitig bearbeitet werden und in einer &ldquo;Änderung&rdquo; zusammengefasst werden. Zusätzlich erlaubt der Editor den einfach Upload von Bilder direkt im gleichen User Interface. Um diesen Editor aufzurufen reicht es aus, in der URL des Github-Repositories das &ldquo;.com&rdquo; durch ein &ldquo;.dev&rdquo; auszutauschen. Die URL für das aktuelle Repository ist demnach:<br />
-<a href="https://github.dev/PartTimeDataScientist/mkdocs-wiki-test">https://github.dev/PartTimeDataScientist/mkdocs-wiki-test</a></p>
-<h3 id="advanced-mit-git-und-beliebigem-editor-oder-ide">&ldquo;Advanced&rdquo; mit Git und beliebigem Editor oder IDE<a class="headerlink" href="#advanced-mit-git-und-beliebigem-editor-oder-ide" title="Permanent link">#</a></h3>
-<p>Anwender mit Git-Kenntnissen können sich nach Freigabe der Berechtigungen das entsprechende <a href="git@github.com:PartTimeDataScientist/mkdocs-wiki-test.git">Repository</a> einfach klonen und lokal auf ihrem Rechner bearbeiten und Änderungen zurück zu Github pushen.</p>
 
   <hr>
 <div class="md-source-file">
@@ -944,7 +833,7 @@
               
                 
               
-              Danke für das Feedback! <a href="https://github.com/PartTimeDataScientist/mkdocs-wiki-test/issues/new/?title=[Feedback]+-+Einf%C3%BChrung+-+/how-to/" target="_blank">Sag uns gerne, was wir verbessern können!</a>
+              Danke für das Feedback! <a href="https://github.com/PartTimeDataScientist/mkdocs-wiki-test/issues/new/?title=[Feedback]+-+MaaS%20NRW%20Wiki+-+/index.live/" target="_blank">Sag uns gerne, was wir verbessern können!</a>
             </div>
           
         </div>
