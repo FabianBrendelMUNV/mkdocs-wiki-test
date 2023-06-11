@@ -121,3 +121,20 @@ jobs:
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'   
         full_commit_message: '${{ env.MESSAGE_SHA }}'
+
+    - name: Publish to Cloudflare Pages
+      uses: cloudflare/pages-action@v1
+      with:
+        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        accountId: 552371a041f9606c85c839ef41fb65e5
+        projectName: maas-wiki-nrw
+        directory: /
+        # Optional: Enable this if you want to have GitHub Deployments triggered
+#        gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+        # Optional: Switch what branch you are publishing to.
+        # By default this will be the branch which triggered this workflow
+#        branch: master
+        # Optional: Change the working directory
+#        workingDirectory: /
+        # Optional: Change the Wrangler version, allows you to point to a specific version or a tag such as `beta`
+        wranglerVersion: '3'        
