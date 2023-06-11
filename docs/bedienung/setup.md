@@ -34,7 +34,7 @@ flowchart TD
     A3 --> A4[https://maas-nrw-wiki-preview.pages.dev]
 
     B1[Live deployment workflow ausgelöst] -->|MkDocs rendering| B2{{Review durch Auditoren}}
-    B2 --> |MkDocs rendering| B3(Push in 'live-site' branch)
+    B2 --> B3(Push in 'live-site' branch)
     B2 --> |Github Action push| B4(Deployed live-site)
     B4 --> B5[https://maas-nrw-wiki.pages.dev]        
 ```
