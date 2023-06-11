@@ -43,6 +43,8 @@ flowchart TD
 - Kommentare von Preview-Site und Live-Site trennen oder auf Preview-Site beschränken?
 - Analytics konfigurieren / abschalten: hilfreich / nicht hilfreich
 - Review der Einstellungen für die Github-Action "commit messages" für live-site push
+- Google-Fonts selber integrieren
+- Juristische Bewertung der DSGVO-Situation bei Cloudflare [Link](https://www.cloudflare.com/de-de/trust-hub/gdpr/)
 - Cloudflare ist klassisches "JAMStack" hosting
 
     * Hier kann nicht einfach per php ein simples Passwort abgefragt werden
