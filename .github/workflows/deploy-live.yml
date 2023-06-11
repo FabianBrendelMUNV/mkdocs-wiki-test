@@ -65,6 +65,9 @@ jobs:
       - name: Rename index for live site
         run: mv docs/index.md docs/index.md.test && mv docs/index.live.md docs/index.md
 
+      - name: Rename .pages for live site
+        run: mv docs/.pages docs/.pages.test && mv docs/.pages.live docs/.pages
+
       - run: mkdocs build --config-file ./mkdocs.yml
 
       - run: mkauthdocs maas mobidrom site/ --heading "Login to Maas NRW Wiki Demo Site"
