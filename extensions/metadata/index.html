@@ -1,17 +1,3 @@
-<?php
-	session_start();
-	if (!$_SESSION['login']) {
-		$dirname = $_SERVER['REQUEST_URI'];
-
-		if (substr($dirname, -1) != '/') {
-			$dirname=dirname($dirname).'/';
-		} else {
-			$dirname = preg_replace('~/+~', '/', $dirname);
-		}
-
-		header("Location: ".$dirname."../login.php?redirect=introduction/index.php");
-	}
-?>
 
 <!doctype html>
 <html lang="en" class="no-js">
@@ -23,24 +9,24 @@
       
       
       
-        <link rel="prev" href="../how-to/">
+        <link rel="prev" href="../footnotes/">
       
       
-        <link rel="next" href="../examples/">
+        <link rel="next" href="../pymdown/">
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
     
     
       
-        <title>Maas Wiki NRW - MaaS NRW Wiki - Demo Site</title>
+        <title>Metadaten - MaaS NRW Wiki - Demo Site</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.26e3688c.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ecc896b0.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -56,9 +42,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -67,7 +53,7 @@
     
     
     
-  <link rel="stylesheet" href="../assets/stylesheets/custom.f7ec4df2.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/custom.f7ec4df2.min.css">
 
   </head>
   
@@ -91,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#hier-gibts-die-einfuhrung" class="md-skip">
+        <a href="#installation" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +104,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="MaaS NRW Wiki - Demo Site" class="md-header__button md-logo" aria-label="MaaS NRW Wiki - Demo Site" data-md-component="logo">
+    <a href="../.." title="MaaS NRW Wiki - Demo Site" class="md-header__button md-logo" aria-label="MaaS NRW Wiki - Demo Site" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -137,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Maas Wiki NRW
+              Metadaten
             
           </span>
         </div>
@@ -232,7 +218,7 @@
 
 
   <li class="md-tabs__item">
-    <a href=".." class="md-tabs__link">
+    <a href="../.." class="md-tabs__link">
       Maas Wiki NRW - Demo Site
     </a>
   </li>
@@ -244,7 +230,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../index.live/" class="md-tabs__link">
+    <a href="../../index.live/" class="md-tabs__link">
       Live Index
     </a>
   </li>
@@ -256,7 +242,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../how-to/" class="md-tabs__link">
+    <a href="../../how-to/" class="md-tabs__link">
       Bedienung
     </a>
   </li>
@@ -265,15 +251,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../../introduction/" class="md-tabs__link">
         Überblick
       </a>
     </li>
@@ -289,7 +273,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../examples/" class="md-tabs__link">
+      <a href="../../examples/" class="md-tabs__link">
         MaaS-Baukasten
       </a>
     </li>
@@ -299,13 +283,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../extensions/admonition/" class="md-tabs__link">
+      <a href="../admonition/" class="md-tabs__link md-tabs__link--active">
         Erweiterungen
       </a>
     </li>
@@ -318,7 +304,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../kontakt/" class="md-tabs__link">
+    <a href="../../kontakt/" class="md-tabs__link">
       Kontakt
     </a>
   </li>
@@ -330,7 +316,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../license/" class="md-tabs__link">
+    <a href="../../license/" class="md-tabs__link">
       Lizenz
     </a>
   </li>
@@ -363,7 +349,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="MaaS NRW Wiki - Demo Site" class="md-nav__button md-logo" aria-label="MaaS NRW Wiki - Demo Site" data-md-component="logo">
+    <a href="../.." title="MaaS NRW Wiki - Demo Site" class="md-nav__button md-logo" aria-label="MaaS NRW Wiki - Demo Site" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -394,7 +380,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Maas Wiki NRW - Demo Site
       </a>
     </li>
@@ -409,7 +395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index.live/" class="md-nav__link">
+      <a href="../../index.live/" class="md-nav__link">
         Live Index
       </a>
     </li>
@@ -424,7 +410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to/" class="md-nav__link">
+      <a href="../../how-to/" class="md-nav__link">
         Bedienung
       </a>
     </li>
@@ -437,16 +423,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
       
       
       
@@ -455,7 +439,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           Überblick
@@ -466,52 +450,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Maas Wiki NRW
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../introduction/" class="md-nav__link">
         Maas Wiki NRW
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#erstellt-mit-mkdocs-und-dem-mkdocs-material-theme" class="md-nav__link">
-    Erstellt mit MkDocs und dem MkDocs-Material Theme
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -558,7 +501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../examples/" class="md-nav__link">
+      <a href="../../examples/" class="md-nav__link">
         MaaS-Baukasten
       </a>
     </li>
@@ -578,14 +521,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
       
       
       
@@ -594,7 +539,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           Erweiterungen
@@ -607,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../extensions/admonition/" class="md-nav__link">
+      <a href="../admonition/" class="md-nav__link">
         Admonition
       </a>
     </li>
@@ -621,7 +566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../extensions/codehilite/" class="md-nav__link">
+      <a href="../codehilite/" class="md-nav__link">
         CodeHilite
       </a>
     </li>
@@ -635,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../extensions/footnotes/" class="md-nav__link">
+      <a href="../footnotes/" class="md-nav__link">
         Fußnoten
       </a>
     </li>
@@ -647,11 +592,82 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../extensions/metadata/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Metadaten
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Metadaten
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overriding-the-title" class="md-nav__link">
+    Overriding the title
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overriding-the-description" class="md-nav__link">
+    Overriding the description
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linking-sources" class="md-nav__link">
+    Linking sources
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -663,7 +679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../extensions/pymdown/" class="md-nav__link">
+      <a href="../pymdown/" class="md-nav__link">
         PyMdown Extensions
       </a>
     </li>
@@ -677,7 +693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../extensions/permalinks/" class="md-nav__link">
+      <a href="../permalinks/" class="md-nav__link">
         Permalinks
       </a>
     </li>
@@ -699,7 +715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kontakt/" class="md-nav__link">
+      <a href="../../kontakt/" class="md-nav__link">
         Kontakt
       </a>
     </li>
@@ -714,7 +730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../license/" class="md-nav__link">
+      <a href="../../license/" class="md-nav__link">
         Lizenz
       </a>
     </li>
@@ -738,8 +754,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -748,9 +762,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#erstellt-mit-mkdocs-und-dem-mkdocs-material-theme" class="md-nav__link">
-    Erstellt mit MkDocs und dem MkDocs-Material Theme
+  <a href="#installation" class="md-nav__link">
+    Installation
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overriding-the-title" class="md-nav__link">
+    Overriding the title
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overriding-the-description" class="md-nav__link">
+    Overriding the description
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linking-sources" class="md-nav__link">
+    Linking sources
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -769,7 +817,7 @@
                   
 
   
-    <a href="https://github.com/PartTimeDataScientist/mkdocs-wiki-test/edit/master/docs/introduction/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/PartTimeDataScientist/mkdocs-wiki-test/edit/master/docs/extensions/metadata.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
     </a>
@@ -777,14 +825,65 @@
   
 
 
-<h1 id="hier-gibts-die-einfuhrung">Hier gibts die Einführung<a class="headerlink" href="#hier-gibts-die-einfuhrung" title="Permanent link">#</a></h1>
-<h2 id="erstellt-mit-mkdocs-und-dem-mkdocs-material-theme">Erstellt mit MkDocs und dem MkDocs-Material Theme<a class="headerlink" href="#erstellt-mit-mkdocs-und-dem-mkdocs-material-theme" title="Permanent link">#</a></h2>
-<p><img alt="Ein Maas Held" src="../images/hero_image%5B1%5D.svg" />
- Diese Seite wurde erzeugt von <a href="http://www.mkdocs.org">MkDocs</a>, einem ausgezeichneten Static Site Generator für Online-Dokumentationen. Das Deisgn verwendet <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>.</p>
-<div class="admonition warning">
-<p class="admonition-title">Achtung!</p>
-<p>Preview for internal use only!</p>
-</div>
+  <h1>Metadaten</h1>
+
+<p>The <a href="https://pythonhosted.org/Markdown/extensions/meta_data.html">Metadata</a> extension makes it possible to add metadata to a document
+which gives more control over the theme in a page-specific context.</p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h2>
+<p>Add the following lines to your <code>mkdocs.yml</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">markdown_extensions</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">meta</span>
+</code></pre></div>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">#</a></h2>
+<p>Metadata is written as a series of key-value pairs at the beginning of the
+Markdown document, delimited by a blank line which ends the metadata context.
+Naturally, the metadata is stripped from the document before rendering the
+actual page content and made available to the theme.</p>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>title: Lorem ipsum dolor sit amet
+description: Nullam urna elit, malesuada eget finibus ut, ac tortor.
+path: path/to/file
+source: file.js
+
+<span class="gh"># Headline</span>
+
+...
+</code></pre></div>
+<p>See the next section which covers the metadata that is supported by Material.</p>
+<h3 id="overriding-the-title">Overriding the title<a class="headerlink" href="#overriding-the-title" title="Permanent link">#</a></h3>
+<p>The page title can be overridden on a per-document level:</p>
+<div class="highlight"><pre><span></span><code>title: Lorem ipsum dolor sit amet
+</code></pre></div>
+<p>This will set the <code>title</code> tag inside the document <code>head</code> for the current page
+to the provided value. It will also override the default behavior of Material
+for MkDocs which appends the site title using a dash as a separator to the page
+title.</p>
+<h3 id="overriding-the-description">Overriding the description<a class="headerlink" href="#overriding-the-description" title="Permanent link">#</a></h3>
+<p>The page description can also be overridden on a per-document level:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Nullam urna elit, malesuada eget finibus ut, ac tortor.</span>
+</code></pre></div>
+<p>This will set the <code>meta</code> tag containing the site description inside the
+document <code>head</code> for the current page to the provided value.</p>
+<h3 id="linking-sources">Linking sources<a class="headerlink" href="#linking-sources" title="Permanent link">#</a></h3>
+<p>When a document is related to a specific set of source files and the <code>repo_url</code>
+is defined inside the project&rsquo;s <code>mkdocs.yml</code>, the files can be linked using the
+<code>source</code> key:</p>
+<div class="highlight"><pre><span></span><code>source: file.js
+</code></pre></div>
+<p>A new entry at the bottom of the table of contents is generated that is linking
+to the section listing the linked source files. Multiple files can be linked by
+adding filenames on separate lines:</p>
+<div class="highlight"><pre><span></span><code>source: file.js
+        file.css
+</code></pre></div>
+<p>The filenames are appended to the <code>repo_url</code> set in your <code>mkdocs.yml</code>, but can
+be prefixed with a <code>path</code> to ensure correct path resolving:</p>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>path: tree/master/docs/extensions
+source: metadata.md
+</code></pre></div>
+<p>Result:</p>
+<p>See the <a href="#__source">source</a> section for the resulting output.</p>
 
   <hr>
 <div class="md-source-file">
@@ -834,7 +933,7 @@
               
                 
               
-              Danke für das Feedback! <a href="https://github.com/PartTimeDataScientist/mkdocs-wiki-test/issues/new/?title=[Feedback]+-+Maas%20Wiki%20NRW+-+/introduction/" target="_blank">Sag uns gerne, was wir verbessern können!</a>
+              Danke für das Feedback! <a href="https://github.com/PartTimeDataScientist/mkdocs-wiki-test/issues/new/?title=[Feedback]+-+Metadaten+-+/extensions/metadata/" target="_blank">Sag uns gerne, was wir verbessern können!</a>
             </div>
           
         </div>
@@ -842,83 +941,6 @@
     </fieldset>
   </form>
 
-
-  <h2 id="__comments">Comments</h2>
-  <script src="https://giscus.app/client.js"
-        data-repo="PartTimeDataScientist/mkdocs-wiki-test"
-        data-repo-id="R_kgDOJmHvPw"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOJmHvP84CWrsF"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="0"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="preferred_color_scheme"
-        data-lang="de"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-</script>
-
-<script>
-  /* Activate feedback */
-        /* Set up feedback, i.e. "Was this page helpful?" */
-        if (document.forms.feedback) {
-          var feedback = document.forms.feedback
-          for (var button of feedback.querySelectorAll("[type=submit]")) {
-            button.addEventListener("click", function(ev) {
-              ev.preventDefault()
-
-              /* Retrieve and send data */
-              var page = document.location.pathname
-              var data = this.getAttribute("data-md-value")
-
-              /* Disable form and show note, if given */
-              feedback.firstElementChild.disabled = true
-              var note = feedback.querySelector(
-                ".md-feedback__note [data-md-value='" + data + "']"
-              )
-              if (note)
-                note.hidden = false
-            console.log(page, data)     
-            })
-            /* Show feedback */
-            feedback.hidden = false
-          }
-}
-</script>
-
-<!-- Synchronize Giscus theme with palette -->
-  <script>
-    var giscus = document.querySelector("script[src*=giscus]")
-
-    /* Set palette on initial load */
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object") {
-      var theme = palette.color.scheme === "slate" ? "dark" : "light"
-      giscus.setAttribute("data-theme", theme) 
-    }
-
-    /* Register event handlers after documented loaded */
-    document.addEventListener("DOMContentLoaded", function() {
-      var ref = document.querySelector("[data-md-component=palette]")
-      ref.addEventListener("change", function() {
-        var palette = __md_get("__palette")
-        if (palette && typeof palette.color === "object") {
-          var theme = palette.color.scheme === "slate" ? "dark" : "light"
-
-          /* Instruct Giscus to change theme */
-          var frame = document.querySelector(".giscus-frame")
-          frame.contentWindow.postMessage(
-            { giscus: { setConfig: { theme } } },
-            "https://giscus.app"
-          )
-        }
-      })
-    })
-
-  </script>
 
                 
               </article>
@@ -972,16 +994,16 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.action.edit", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
   
-      <script src="../assets/javascripts/bundle.b4d07000.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b4d07000.min.js"></script>
       
-        <script src="../javascripts/feedback.js"></script>
+        <script src="../../javascripts/feedback.js"></script>
       
     
-  <script src="../assets/javascripts/custom.13133f3f.min.js"></script>
+  <script src="../../assets/javascripts/custom.13133f3f.min.js"></script>
 
   </body>
 </html>

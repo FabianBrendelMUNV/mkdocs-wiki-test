@@ -1,17 +1,3 @@
-<?php
-	session_start();
-	if (!$_SESSION['login']) {
-		$dirname = $_SERVER['REQUEST_URI'];
-
-		if (substr($dirname, -1) != '/') {
-			$dirname=dirname($dirname).'/';
-		} else {
-			$dirname = preg_replace('~/+~', '/', $dirname);
-		}
-
-		header("Location: ".$dirname."../../login.php?redirect=extensions/codehilite/index.php");
-	}
-?>
 
 <!doctype html>
 <html lang="en" class="no-js">
@@ -1243,7 +1229,7 @@
 
   <h1>CodeHilite</h1>
 
-<p><a href="https://pythonhosted.org/Markdown/extensions/code_hilite.php">CodeHilite</a> is an extension that adds syntax highlighting to code blocks
+<p><a href="https://pythonhosted.org/Markdown/extensions/code_hilite.html">CodeHilite</a> is an extension that adds syntax highlighting to code blocks
 and is included in the standard Markdown library. The highlighting process is
 executed during compilation of the Markdown file.</p>
 <div class="admonition failure">

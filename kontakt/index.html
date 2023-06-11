@@ -1,17 +1,3 @@
-<?php
-	session_start();
-	if (!$_SESSION['login']) {
-		$dirname = $_SERVER['REQUEST_URI'];
-
-		if (substr($dirname, -1) != '/') {
-			$dirname=dirname($dirname).'/';
-		} else {
-			$dirname = preg_replace('~/+~', '/', $dirname);
-		}
-
-		header("Location: ".$dirname."../login.php?redirect=examples/index.php");
-	}
-?>
 
 <!doctype html>
 <html lang="en" class="no-js">
@@ -23,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../introduction/">
+        <link rel="prev" href="../extensions/permalinks/">
       
       
-        <link rel="next" href="../extensions/admonition/">
+        <link rel="next" href="../license/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
     
     
       
-        <title>MaaS-Baukasten - MaaS NRW Wiki - Demo Site</title>
+        <title>Kontakt - MaaS NRW Wiki - Demo Site</title>
       
     
     
@@ -90,11 +76,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#versionsbeschreibung" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -137,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MaaS-Baukasten
+              Kontakt
             
           </span>
         </div>
@@ -281,15 +262,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../examples/" class="md-tabs__link">
         MaaS-Baukasten
       </a>
     </li>
@@ -315,10 +294,12 @@
         
   
   
+    
+  
 
 
   <li class="md-tabs__item">
-    <a href="../kontakt/" class="md-tabs__link">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
       Kontakt
     </a>
   </li>
@@ -486,16 +467,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
       
       
       
@@ -504,7 +483,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           MaaS-Baukasten
@@ -515,82 +494,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          MaaS-Baukasten
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../examples/" class="md-nav__link">
         MaaS-Baukasten
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#versionsbeschreibung" class="md-nav__link">
-    Versionsbeschreibung
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#einleitung" class="md-nav__link">
-    Einleitung
-  </a>
-  
-    <nav class="md-nav" aria-label="Einleitung">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#zielgruppe" class="md-nav__link">
-    Zielgruppe
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#mobility-as-a-service-und-maas-nrw" class="md-nav__link">
-    Mobility-as-a-Service und Maas NRW
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#maas-projekte" class="md-nav__link">
-    MaaS-Projekte
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -727,11 +635,19 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../kontakt/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Kontakt
       </a>
+      
     </li>
   
 
@@ -769,55 +685,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#versionsbeschreibung" class="md-nav__link">
-    Versionsbeschreibung
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#einleitung" class="md-nav__link">
-    Einleitung
-  </a>
-  
-    <nav class="md-nav" aria-label="Einleitung">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#zielgruppe" class="md-nav__link">
-    Zielgruppe
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#mobility-as-a-service-und-maas-nrw" class="md-nav__link">
-    Mobility-as-a-Service und Maas NRW
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#maas-projekte" class="md-nav__link">
-    MaaS-Projekte
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -831,7 +698,7 @@
                   
 
   
-    <a href="https://github.com/PartTimeDataScientist/mkdocs-wiki-test/edit/master/docs/examples/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/PartTimeDataScientist/mkdocs-wiki-test/edit/master/docs/kontakt.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
     </a>
@@ -839,28 +706,9 @@
   
 
 
-  <h1>MaaS-Baukasten</h1>
+  <h1>Kontakt</h1>
 
-<h3 id="versionsbeschreibung">Versionsbeschreibung<a class="headerlink" href="#versionsbeschreibung" title="Permanent link">#</a></h3>
-<div class="admonition warning">
-<p class="admonition-title">Achtung</p>
-<p>Preview-Version zum internen Gebrauch!</p>
-</div>
-<p>Bei dem vorliegenden Dokument handelt es sich um eine Preview-Version des MaaS NRW-Baukastens lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   </p>
-<p>Bei dem vorliegenden Dokument handelt es sich um eine Preview-Version des MaaS NRW-Baukastens lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   </p>
-<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   </p>
-<h2 id="einleitung">Einleitung<a class="headerlink" href="#einleitung" title="Permanent link">#</a></h2>
-<h3 id="zielgruppe">Zielgruppe<a class="headerlink" href="#zielgruppe" title="Permanent link">#</a></h3>
-<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   </p>
-<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.   </p>
-<h3 id="mobility-as-a-service-und-maas-nrw">Mobility-as-a-Service und Maas NRW<a class="headerlink" href="#mobility-as-a-service-und-maas-nrw" title="Permanent link">#</a></h3>
-<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   </p>
-<p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur</p>
-<h3 id="maas-projekte">MaaS-Projekte<a class="headerlink" href="#maas-projekte" title="Permanent link">#</a></h3>
-<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   </p>
-<p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur</p>
-<p><img alt="Maas-Projekte" src="../images/maas-projekte.png" /></p>
-<p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur</p>
+<p>&hellip;</p>
 
   <hr>
 <div class="md-source-file">
@@ -910,7 +758,7 @@
               
                 
               
-              Danke für das Feedback! <a href="https://github.com/PartTimeDataScientist/mkdocs-wiki-test/issues/new/?title=[Feedback]+-+MaaS-Baukasten+-+/examples/" target="_blank">Sag uns gerne, was wir verbessern können!</a>
+              Danke für das Feedback! <a href="https://github.com/PartTimeDataScientist/mkdocs-wiki-test/issues/new/?title=[Feedback]+-+Kontakt+-+/kontakt/" target="_blank">Sag uns gerne, was wir verbessern können!</a>
             </div>
           
         </div>
@@ -918,83 +766,6 @@
     </fieldset>
   </form>
 
-
-  <h2 id="__comments">Comments</h2>
-  <script src="https://giscus.app/client.js"
-        data-repo="PartTimeDataScientist/mkdocs-wiki-test"
-        data-repo-id="R_kgDOJmHvPw"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOJmHvP84CWrsF"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="0"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="preferred_color_scheme"
-        data-lang="de"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-</script>
-
-<script>
-  /* Activate feedback */
-        /* Set up feedback, i.e. "Was this page helpful?" */
-        if (document.forms.feedback) {
-          var feedback = document.forms.feedback
-          for (var button of feedback.querySelectorAll("[type=submit]")) {
-            button.addEventListener("click", function(ev) {
-              ev.preventDefault()
-
-              /* Retrieve and send data */
-              var page = document.location.pathname
-              var data = this.getAttribute("data-md-value")
-
-              /* Disable form and show note, if given */
-              feedback.firstElementChild.disabled = true
-              var note = feedback.querySelector(
-                ".md-feedback__note [data-md-value='" + data + "']"
-              )
-              if (note)
-                note.hidden = false
-            console.log(page, data)     
-            })
-            /* Show feedback */
-            feedback.hidden = false
-          }
-}
-</script>
-
-<!-- Synchronize Giscus theme with palette -->
-  <script>
-    var giscus = document.querySelector("script[src*=giscus]")
-
-    /* Set palette on initial load */
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object") {
-      var theme = palette.color.scheme === "slate" ? "dark" : "light"
-      giscus.setAttribute("data-theme", theme) 
-    }
-
-    /* Register event handlers after documented loaded */
-    document.addEventListener("DOMContentLoaded", function() {
-      var ref = document.querySelector("[data-md-component=palette]")
-      ref.addEventListener("change", function() {
-        var palette = __md_get("__palette")
-        if (palette && typeof palette.color === "object") {
-          var theme = palette.color.scheme === "slate" ? "dark" : "light"
-
-          /* Instruct Giscus to change theme */
-          var frame = document.querySelector(".giscus-frame")
-          frame.contentWindow.postMessage(
-            { giscus: { setConfig: { theme } } },
-            "https://giscus.app"
-          )
-        }
-      })
-    })
-
-  </script>
 
                 
               </article>

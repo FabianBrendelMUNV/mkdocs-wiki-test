@@ -1,17 +1,3 @@
-<?php
-	session_start();
-	if (!$_SESSION['login']) {
-		$dirname = $_SERVER['REQUEST_URI'];
-
-		if (substr($dirname, -1) != '/') {
-			$dirname=dirname($dirname).'/';
-		} else {
-			$dirname = preg_replace('~/+~', '/', $dirname);
-		}
-
-		header("Location: ".$dirname."../../login.php?redirect=extensions/metadata/index.php");
-	}
-?>
 
 <!doctype html>
 <html lang="en" class="no-js">
@@ -23,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../footnotes/">
+        <link rel="prev" href="../pymdown/">
       
       
-        <link rel="next" href="../pymdown/">
+        <link rel="next" href="../../kontakt/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
     
     
       
-        <title>Metadaten - MaaS NRW Wiki - Demo Site</title>
+        <title>Permalinks - MaaS NRW Wiki - Demo Site</title>
       
     
     
@@ -137,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Metadaten
+              Permalinks
             
           </span>
         </div>
@@ -606,82 +592,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Metadaten
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../metadata/" class="md-nav__link">
         Metadaten
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    Usage
-  </a>
-  
-    <nav class="md-nav" aria-label="Usage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#overriding-the-title" class="md-nav__link">
-    Overriding the title
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#overriding-the-description" class="md-nav__link">
-    Overriding the description
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#linking-sources" class="md-nav__link">
-    Linking sources
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -705,11 +620,55 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../permalinks/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Permalinks
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Permalinks
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anwendung" class="md-nav__link">
+    Anwendung
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -783,36 +742,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    Usage
+  <a href="#anwendung" class="md-nav__link">
+    Anwendung
   </a>
-  
-    <nav class="md-nav" aria-label="Usage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#overriding-the-title" class="md-nav__link">
-    Overriding the title
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#overriding-the-description" class="md-nav__link">
-    Overriding the description
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#linking-sources" class="md-nav__link">
-    Linking sources
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -831,7 +763,7 @@
                   
 
   
-    <a href="https://github.com/PartTimeDataScientist/mkdocs-wiki-test/edit/master/docs/extensions/metadata.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/PartTimeDataScientist/mkdocs-wiki-test/edit/master/docs/extensions/permalinks.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
     </a>
@@ -839,65 +771,21 @@
   
 
 
-  <h1>Metadaten</h1>
+  <h1>Permalinks</h1>
 
-<p>The <a href="https://pythonhosted.org/Markdown/extensions/meta_data.php">Metadata</a> extension makes it possible to add metadata to a document
-which gives more control over the theme in a page-specific context.</p>
+<p>Permalinks sind ein Feature der <a href="https://pythonhosted.org/Markdown/extensions/toc.html">Table of Contents</a> Erweiterung, die ein Bestandteil der Standard Markdown Bibliothek ist. Die Erweiterung fügt einen Anker an das Ende jeder Headline ein, was es möglich macht direkt auf einen bestimmten Absatz einer Seite zu verlinken.</p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h2>
-<p>Add the following lines to your <code>mkdocs.yml</code>:</p>
+<p>Um Permalinks zu aktivieren, füge diese Zeilen der <code>mkdocs.yml</code> hinzu:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">markdown_extensions</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">meta</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc(permalink=true)</span>
 </code></pre></div>
-<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">#</a></h2>
-<p>Metadata is written as a series of key-value pairs at the beginning of the
-Markdown document, delimited by a blank line which ends the metadata context.
-Naturally, the metadata is stripped from the document before rendering the
-actual page content and made available to the theme.</p>
-<p>Example:</p>
-<div class="highlight"><pre><span></span><code>title: Lorem ipsum dolor sit amet
-description: Nullam urna elit, malesuada eget finibus ut, ac tortor.
-path: path/to/file
-source: file.js
-
-<span class="gh"># Headline</span>
-
-...
+<p>Dadurch wird ein Link mit diesem Symbol <code>¶</code> an das Ende jeder Headline hinzugefügt. (So wie es hier auf dieser Seite zu sehen ist)</p>
+<p>Um den Text der Permalinks zu ändern, muss der Konfiguration ein Text hinzugefügt werden, z.B.:</p>
+<div class="highlight"><pre><span></span><code>markdown_extensions:
+<span class="w">  </span><span class="k">-</span><span class="w"> </span>toc(permalink=Link)
 </code></pre></div>
-<p>See the next section which covers the metadata that is supported by Material.</p>
-<h3 id="overriding-the-title">Overriding the title<a class="headerlink" href="#overriding-the-title" title="Permanent link">#</a></h3>
-<p>The page title can be overridden on a per-document level:</p>
-<div class="highlight"><pre><span></span><code>title: Lorem ipsum dolor sit amet
-</code></pre></div>
-<p>This will set the <code>title</code> tag inside the document <code>head</code> for the current page
-to the provided value. It will also override the default behavior of Material
-for MkDocs which appends the site title using a dash as a separator to the page
-title.</p>
-<h3 id="overriding-the-description">Overriding the description<a class="headerlink" href="#overriding-the-description" title="Permanent link">#</a></h3>
-<p>The page description can also be overridden on a per-document level:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Nullam urna elit, malesuada eget finibus ut, ac tortor.</span>
-</code></pre></div>
-<p>This will set the <code>meta</code> tag containing the site description inside the
-document <code>head</code> for the current page to the provided value.</p>
-<h3 id="linking-sources">Linking sources<a class="headerlink" href="#linking-sources" title="Permanent link">#</a></h3>
-<p>When a document is related to a specific set of source files and the <code>repo_url</code>
-is defined inside the project&rsquo;s <code>mkdocs.yml</code>, the files can be linked using the
-<code>source</code> key:</p>
-<div class="highlight"><pre><span></span><code>source: file.js
-</code></pre></div>
-<p>A new entry at the bottom of the table of contents is generated that is linking
-to the section listing the linked source files. Multiple files can be linked by
-adding filenames on separate lines:</p>
-<div class="highlight"><pre><span></span><code>source: file.js
-        file.css
-</code></pre></div>
-<p>The filenames are appended to the <code>repo_url</code> set in your <code>mkdocs.yml</code>, but can
-be prefixed with a <code>path</code> to ensure correct path resolving:</p>
-<p>Example:</p>
-<div class="highlight"><pre><span></span><code>path: tree/master/docs/extensions
-source: metadata.md
-</code></pre></div>
-<p>Result:</p>
-<p>See the <a href="#__source">source</a> section for the resulting output.</p>
+<h2 id="anwendung">Anwendung<a class="headerlink" href="#anwendung" title="Permanent link">#</a></h2>
+<p>Wenn die Erweiterung aktiviert ist, werden Permalinks automatisch hinzugefügt.</p>
 
   <hr>
 <div class="md-source-file">
@@ -947,7 +835,7 @@ source: metadata.md
               
                 
               
-              Danke für das Feedback! <a href="https://github.com/PartTimeDataScientist/mkdocs-wiki-test/issues/new/?title=[Feedback]+-+Metadaten+-+/extensions/metadata/" target="_blank">Sag uns gerne, was wir verbessern können!</a>
+              Danke für das Feedback! <a href="https://github.com/PartTimeDataScientist/mkdocs-wiki-test/issues/new/?title=[Feedback]+-+Permalinks+-+/extensions/permalinks/" target="_blank">Sag uns gerne, was wir verbessern können!</a>
             </div>
           
         </div>
