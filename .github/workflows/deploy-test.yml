@@ -74,15 +74,15 @@ jobs:
           name: website
           path: site/
 
-#      # Temporary upload until Cloudflare setup is working
-#      - name: 📂 Sync files
-#        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-#        with:
-#          server: mkdocs-wiki-test.roeglin-data.de
-#          protocol: ftps
-#          username: mkdocs-wiki-test
-#          password: ${{ secrets.ftps_password }}
-#          local-dir: site/
+      # Temporary upload until Cloudflare setup is working
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: mkdocs-wiki-test.roeglin-data.de
+          protocol: ftps
+          username: mkdocs-wiki-test
+          password: ${{ secrets.ftps_password }}
+          local-dir: site/
 
   deploy-test:
     runs-on: ubuntu-22.04
