@@ -6,8 +6,8 @@
   <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.f7ec4df2.min.css' | url }}">
 {% endblock %}
 {% block announce %}
-  Dies ist die Preview-Version des MaaS-NRW Wikis!</br></br>
-  Es kann unrichtige oder veraltete Informationen beinhalten und ist nicht zur allgemeinen Verwendung vorgesehen!</br></br>
+  Dies ist die Preview-Version des MaaS-NRW Wikis!</br>
+  Es kann unrichtige oder veraltete Informationen beinhalten und ist nicht zur allgemeinen Verwendung vorgesehen!</br>
 {% endblock %}
 {% block scripts %}
   {{ super() }}
