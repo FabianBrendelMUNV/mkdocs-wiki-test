@@ -1,5 +1,6 @@
 nav:
   - index.md
+  - 'Live Index': index.live.md
   - 'Bedienung': bedienung
   - 'Überblick': introduction
   - 'MaaS-Baukasten': examples

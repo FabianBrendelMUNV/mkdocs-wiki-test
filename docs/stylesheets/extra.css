@@ -5,6 +5,18 @@
     text-align: center
   }
 
+  .md-banner__inner {
+    font-size: 1.0rem;
+    font-weight: bold;
+    margin: 0.6rem auto;
+    padding: 0.8rem;
+    animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {  
+    50% { opacity: 0.3; }
+  }
+
 .md-footer-nav__title {
     font-size: 1.5rem;
     padding: 0;
