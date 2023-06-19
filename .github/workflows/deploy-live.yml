@@ -102,9 +102,10 @@ jobs:
 
     - name: Setup commit message for deployment
       run: |
+        ORIGINAL_COMMIT_MESSAGE=$(git log -1 --pretty=format:"%s") >> $GITHUB_ENV
         MESSAGE=$(cat << EOF
         Deploy von commit: ${GITHUB_SHA::7} - 
-        ${{ github.event.head_commit.message }}
+        ${{ ORIGINAL_COMMIT_MESSAGE }}
         EOF
         )
         echo MESSAGE_SHA=$MESSAGE >> $GITHUB_ENV
