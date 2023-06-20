@@ -105,15 +105,18 @@ jobs:
     - name: Setup commit message for deployment
       shell: bash
       run: |
-
-        # Get commit message from last commit
-        export LAST_COMMIT_MESSAGE=$(git log -1 --pretty=format:"%s")
+        EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
+        echo "JSON_RESPONSE<<$EOF" >> "$GITHUB_ENV"
+        curl https://example.com >> "$GITHUB_ENV"
+        echo "$EOF" >> "$GITHUB_ENV"      
         
+        # Get commit message from last commit
+        LAST_COMMIT_MESSAGE=$(git log -1 --pretty=format:"%s")        
         echo LAST_COMMIT_MESSAGE
         echo "ORIGINAL_COMMIT_MESSAGE=$LAST_COMMIT_MESSAGE" >> $GITHUB_ENV
 
         # Prepare new commit message with short hash
-        export NEW_COMMIT_MESSAGE=$(cat << EOF
+        NEW_COMMIT_MESSAGE=$(cat << EOF
         Deploy von commit: ${GITHUB_SHA::7} - 
         ${{ LAST_COMMIT_MESSAGE }}
         EOF
