@@ -103,13 +103,14 @@ jobs:
         path: site/
 
     - name: Setup commit message for deployment
+      shell: bash
       run: |
 
         # Get commit message from last commit
         LAST_COMMIT_MESSAGE=$(git log -1 --pretty=format:"%s")
         
         echo LAST_COMMIT_MESSAGE
-        #echo ORIGINAL_COMMIT_MESSAGE=$LAST_COMMIT_MESSAGE >> $GITHUB_ENV
+        echo "ORIGINAL_COMMIT_MESSAGE=$LAST_COMMIT_MESSAGE" >> $GITHUB_ENV
 
         # Prepare new commit message with short hash
         NEW_COMMIT_MESSAGE=$(cat << EOF
@@ -119,7 +120,7 @@ jobs:
         )
 
         # Set new commit message for environment        
-        echo MESSAGE_SHA=$NEW_COMMIT_MESSAGE >> $GITHUB_ENV
+        echo "MESSAGE_SHA=$NEW_COMMIT_MESSAGE" >> $GITHUB_ENV
 
     - name: Check commit message for deployment
       run: |
