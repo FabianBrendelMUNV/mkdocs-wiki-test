@@ -134,7 +134,7 @@ jobs:
         )
 
         # Set new commit message for environment        
-        echo "MESSAGE_SHA=$NEW_COMMIT_MESSAGE" >> $GITHUB_ENV
+        echo "MESSAGE_SHA=${NEW_COMMIT_MESSAGE}" >> $GITHUB_ENV
 
     - name: Check commit message for deployment
       run: |
