@@ -107,7 +107,8 @@ jobs:
 
         # Get commit message from last commit
         LAST_COMMIT_MESSAGE=$(git log -1 --pretty=format:"%s")
-        ORIGINAL_COMMIT_MESSAGE=$LAST_COMMIT_MESSAGE
+        
+        echo ORIGINAL_COMMIT_MESSAGE=$LAST_COMMIT_MESSAGE >> $GITHUB_ENV
 
         # Prepare new commit message with short hash
         NEW_COMMIT_MESSAGE=$(cat << EOF
