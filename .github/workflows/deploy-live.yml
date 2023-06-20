@@ -111,14 +111,14 @@ jobs:
         echo "$EOF" >> "$GITHUB_ENV"      
         
         # Get commit message from last commit
-        LAST_COMMIT_MESSAGE=$(git log -1 --pretty=format:"%s")        
-        echo LAST_COMMIT_MESSAGE
-        echo "ORIGINAL_COMMIT_MESSAGE=$LAST_COMMIT_MESSAGE" >> $GITHUB_ENV
+        # LAST_COMMIT_MESSAGE=$(git log -1 --pretty=format:"%s")        
+        # echo LAST_COMMIT_MESSAGE
+        # echo "ORIGINAL_COMMIT_MESSAGE=$LAST_COMMIT_MESSAGE" >> $GITHUB_ENV
 
         # Prepare new commit message with short hash
         NEW_COMMIT_MESSAGE=$(cat << EOF
         Deploy von commit: ${GITHUB_SHA::7} - 
-        ${{ LAST_COMMIT_MESSAGE }}
+        ${{ EOF }}
         EOF
         )
 
