@@ -105,18 +105,17 @@ jobs:
     - name: Setup commit message for deployment
       run: |
 
-#       Get last commit message from master
         LAST_COMMIT_MESSAGE=$(git log -1 --pretty=format:"%s")
         echo "ORIGINAL_COMMIT_MESSAGE=$LAST_COMMIT_MESSAGE" >> $GITHUB_ENV
-        
-#       Prepare new commit message with short hash
+
+        # Prepare new commit message with short hash
         NEW_COMMIT_MESSAGE=$(cat << EOF
         Deploy von commit: ${GITHUB_SHA::7} - 
         ${{ ORIGINAL_COMMIT_MESSAGE }}
         EOF
         )
 
-#       Set new commit message for environment        
+        # Set new commit message for environment        
         echo MESSAGE_SHA=$NEW_COMMIT_MESSAGE >> $GITHUB_ENV
 
     - name: Check commit message for deployment
