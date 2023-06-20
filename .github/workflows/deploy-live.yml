@@ -105,8 +105,9 @@ jobs:
     - name: Setup commit message for deployment
       run: |
 
+        # Get commit message from last commit
         LAST_COMMIT_MESSAGE=$(git log -1 --pretty=format:"%s")
-        echo "ORIGINAL_COMMIT_MESSAGE=$LAST_COMMIT_MESSAGE" >> $GITHUB_ENV
+        ORIGINAL_COMMIT_MESSAGE=$LAST_COMMIT_MESSAGE
 
         # Prepare new commit message with short hash
         NEW_COMMIT_MESSAGE=$(cat << EOF
