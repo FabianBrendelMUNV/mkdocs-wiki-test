@@ -102,23 +102,6 @@ jobs:
         name: website
         path: site/
 
-    - name: Setup commit message for deployment test
-      shell: bash
-      run: |
-        # Get commit message from last commit
-        LAST_COMMIT_MESSAGE=$(git log -1 --pretty=format:"%s")        
-        echo $LAST_COMMIT_MESSAGE
-        
-        # Prepare new commit message with short hash
-        NEW_COMMIT_MESSAGE=$(cat << EOF
-        Deploy von commit: ${GITHUB_SHA::7} - 
-        ${LAST_COMMIT_MESSAGE}
-        EOF
-        )
-
-        # Set new commit message for environment        
-        echo $MESSAGE_SHA
-
     - name: Setup commit message for deployment
       shell: bash
       run: |
