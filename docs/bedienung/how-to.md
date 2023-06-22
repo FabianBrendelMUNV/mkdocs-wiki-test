@@ -14,6 +14,8 @@ Um die Kommentarfunktion benutzen zu können, "Issues" zu erstellen oder Texte e
 
 ## Bearbeitung von Inhalten
 
+Hier fehlt noch ein Screencast!
+
 ### "Einfach" mit StackEdit
 Eine einfache Möglichkeit, die Seiten zu bearbeiten ist die Verwendung von [StackEdit](https://stackedit.io/app#). Hierzu muss StackEdit zunächst mit dem GitHub-Account verbunden werden.
 !!! note 
