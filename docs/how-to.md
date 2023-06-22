@@ -14,9 +14,9 @@ weight: 1
 ## Voraussetzungen
 Um die Kommentarfunktion benutzen zu können, "Issues" zu erstellen oder Texte ergänzen oder editieren zu können ist ein [Github](https://github.com)-Account notwendig. Dieser ist grundsätzlich erst einmal kostenlos erstellbar und damit lässt sich die Kommentar-Funktion direkt verwenden. Um Änderungen oder Ergänzungen auf den Seiten vornehmen zu können müssen zunächst von [Lars Röglin](mailto:lars.roeglin@strassen.nrw.de) Berechtigungen freigegeben werden.
 
-|  |  |
+| Spalte 1| Spalte 2  |
 |--|--|
-|  |  |
+| Zeile 1 | Zeile 2 |
 
 
 ## Bearbeitung von Inhalten
@@ -59,5 +59,5 @@ Der gesamte Text des Wikis lässt sich auch durch eine von Github bereitgestellt
 ### "Advanced" mit Git und beliebigem Editor oder IDE
 Anwender mit Git-Kenntnissen können sich nach Freigabe der Berechtigungen das entsprechende [Repository](git@github.com:PartTimeDataScientist/mkdocs-wiki-test.git) einfach klonen und lokal auf ihrem Rechner bearbeiten und Änderungen zurück zu Github pushen.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYyOTEyMjAxXX0=
+eyJoaXN0b3J5IjpbLTYyNjQ1NDkxNV19
 -->
